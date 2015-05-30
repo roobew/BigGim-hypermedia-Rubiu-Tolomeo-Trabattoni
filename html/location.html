@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body onload="window.scrollTo(0,200)">
 
     <!-- Navbar definition -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -139,6 +139,7 @@
     </header>
 
     <!-- Page Content -->
+
     <div class="container">
 
         <div class="row">
@@ -153,13 +154,11 @@
                     <h3 class="panel-title">WHERE WE ARE</h3>
                 </div>
                 <div class="panel-body">
-                    <h4>via via via via </h4>
-                    <h5> Salerno, IT</h5>
+                    <h4><div class="address" id = "address"/></h4>
+                    <h5><div class="city"/></h5>
                 </div>
 
-                <div id="myMap">
-
-                </div>
+                <div id="myMap"></div>
 
             </div>
         </div>
@@ -170,8 +169,8 @@
                     <h3 class="panel-title">CONTACT US</h3>
                 </div>
                 <div class="panel-body">
-                    <h4>numero here</h4>
-                    <h5> email here</h5>
+                    <h4><div class="phone"/></h4>
+                    <h5><div class="mail"/></h5>
                 </div>
             </div>
         </div>
@@ -185,6 +184,7 @@
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
+    <script src="../js/getLocation.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
