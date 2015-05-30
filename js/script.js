@@ -22,7 +22,7 @@ function ready() {
                 el+=inst[i].id+" <b>"+inst[i].name+"</b>, "+inst[i].surname+"<br>";
             }
 
-            $("stocazzo").html(el);
+            $(".prova").html(el);
         },
         error: function(request,error)
         {

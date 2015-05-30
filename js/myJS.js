@@ -9,6 +9,7 @@ $('.nav li').hover(function(){
 
 
 // Google Maps config
+/*
 $(document).ready(loadGoogleMaps);
 function loadGoogleMaps(){
     var mapCanvas = document.getElementById('myMap');
@@ -20,3 +21,4 @@ function loadGoogleMaps(){
     var map = new google.maps.Map(mapCanvas, mapOptions)
 };
     google.maps.event.addDomListener(window, 'load', initialize);
+//*/
