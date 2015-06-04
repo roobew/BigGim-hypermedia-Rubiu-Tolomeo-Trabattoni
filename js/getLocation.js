@@ -35,20 +35,31 @@ function gMaps(address){
     var latitude;
     var longitude;
     var geocoder = new google.maps.Geocoder();
+
+
+
     geocoder.geocode({ 'address': address }, function (results, status) {
+            var myLat=results[0].geometry.location.lat();
+            var myLong=results[0].geometry.location.lng();
 
-              var myLatLng = new google.maps.LatLng(results[0].geometry.location.lat(), results[0].geometry.location.lng());
+            var myLatLng = new google.maps.LatLng(myLat,myLong);
 
-        var mapOptions = {
-        center: myLatLng ,
-        zoom: 15,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+            var mapOptions = {
+                    center: myLatLng ,
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
 
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions)
-  google.maps.event.addDomListener(window, 'load', initialize);
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Hello World!'
             });
 
+    });
+  google.maps.event.addDomListener(window, 'load',gMaps);
 
 
 //*/
