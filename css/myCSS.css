@@ -1,9 +1,92 @@
+/************ NOTES: .class or #idElement      **************/
+
+/* CSS FOR LOCATION PAGE*/
 #myMap {
         width: 100%;
         height: 300px;
       }
 
+<<<<<<< HEAD
 aside {
     float : left;
     width : 25%;
 }
+=======
+#provadiv{
+     width:970px; margin:0 auto;
+}
+
+/* CSS FOR ALLCOURSECATEGORIES PAGE   */
+
+/*
+#courseCategoryBody{
+    height: 100%;
+}
+
+#courseBody>.courseCategoryContent{
+    height: auto;
+
+} */
+
+.courseCategoryContent{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: blue;
+}
+
+.courseCategoryTitle{
+    background-color: wheat;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.generalDescription{
+    font-size: 20px;
+    font-weight: 400;
+    width: 38%;
+    max-height:none;
+    background-color:darksalmon;
+    display: block;
+    float:left;
+}
+
+.courseList{
+    width:60%;
+    height: 100%;
+
+    background-color: lightgrey;
+    display: block;
+    float:left;
+    margin-left: 2%;
+}
+
+.category{
+    display:block;
+    float: left;
+    width: 95%;
+    min-height: 150px;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: coral;
+}
+
+.descriptionInside{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.imageInside{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+>>>>>>> origin/master
