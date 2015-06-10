@@ -2,10 +2,16 @@
 
 /* CSS FOR LOCATION PAGE*/
 #myMap {
-        width: 320px;
-        height: 400px;
+        width: 100%;
+        height: 300px;
       }
 
+<<<<<<< HEAD
+aside {
+    float : left;
+    width : 25%;
+}
+=======
 #provadiv{
      width:970px; margin:0 auto;
 }
@@ -85,6 +91,7 @@
     border: 1px solid red;
 }
 
+<<<<<<< HEAD
 /*
 .imageInside{
     width: 100%;
@@ -137,3 +144,6 @@ div.category a {
     float: left;
     width: 50%;
 }
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
