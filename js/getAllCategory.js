@@ -1,4 +1,4 @@
-$(document).ready(getAllCategoryData);
+/*$(document).ready(getAllCategoryData);
 
 function getAllCategoryData() {
     console.log("I'm ready!");
@@ -27,4 +27,16 @@ function getAllCategoryData() {
             console.log("Error");
         }
     });
-}
+}*/
+
+var app = angular.module("Category", []);
+
+app.controller("CategoryCtrl", function($scope, $http) {
+  $http.get("http://hypermediabiggym.altervista.org/getAllCategory.php").
+    success(function(data, status, headers, config) {
+      $scope.categories = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
