@@ -1,0 +1,85 @@
+/*******  GAG PAGE   *******/
+.pageContent{
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: blue;
+}
+
+.courseTitle{
+    background-color: wheat;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+.courseSubtitle{
+    width: auto;
+    display: block;
+    float: left;
+}
+.courseDescription{
+    font-size: 20px;
+    font-weight: 400;
+    width: 38%;
+    max-height:none;
+    background-color:darksalmon;
+    display: block;
+    float:left;
+}
+.courseList{
+    width:25%;
+    height: 100%;
+
+    background-color: lightgrey;
+    display: block;
+    float:left;
+    margin-left: 2%;
+}
+.courseContent{
+    width:75%
+    height: 100%;
+
+    background-color: red;
+    display: block;
+    float:left;
+    margin-left: 0%;
+}
+
+.course{
+    display:block;
+    float: left;
+    width: 95%;
+    min-height: 150px;
+
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: lightgray;
+}
+
+.backArrow{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 50px;
+    margin: 20px;
+}
+
+div.course {
+    position: relative;
+}
+
+div.course a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link*/
+    z-index: 10; /* Places the link above everything else in the div*/
+    background-color: #FFF; /* Fix to make div clickable in IE  */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+
