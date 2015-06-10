@@ -125,6 +125,7 @@ div.category a {
     filter: alpha(opacity=1); /* Fix to make div clickable in IE */
 }
 
+<<<<<<< HEAD
 /*******  GAG PAGE   *******/
 
 .gagSubtitle{
@@ -144,6 +145,8 @@ div.category a {
     float: left;
     width: 50%;
 }
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
