@@ -10,7 +10,7 @@
      width:970px; margin:0 auto;
 }
 
-/* CSS FOR ALLCOURSECATEGORIES PAGE   */
+/********* CSS FOR ALLCOURSECATEGORIES PAGE   *********/
 
 /*
 #courseCategoryBody{
@@ -32,6 +32,7 @@
     background-color: wheat;
     font-weight: bolder;
     font-size: 40px;
+    text-align: center;
 }
 
 .generalDescription{
@@ -81,5 +82,58 @@
     float: left;
     width: 50%;
     height: 100%;
+    border: 1px solid red;
 }
 
+/*
+.imageInside{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 10px;
+}
+*/
+
+.imageGAG,
+.imagePilates,
+.imageSpinning{
+    width: 100%;
+}
+
+/***** Make div linkable *****/
+div.category {
+    position: relative;
+}
+
+div.category a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link */
+    z-index: 10; /* Places the link above everything else in the div */
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+/*******  GAG PAGE   *******/
+
+.gagSubtitle{
+    width: auto;
+    display: block;
+    float: left;
+}
+.backArrow{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 50px;
+    margin: 20px;
+}
+.gagTitle{
+    display: block;
+    float: left;
+    width: 50%;
+}

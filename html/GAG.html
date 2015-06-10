@@ -9,22 +9,25 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ALL COURSE CATEGORIES</title>
+    <title>GAG</title>
 
     <!-- Bootstrap Core CSS -->
-
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-
+   <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../css/half-slider.css" rel="stylesheet">
     <link href="../css/myCSS.css" rel="stylesheet">
 
-    <!-- Script to activate Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body onload="window.scrollTo(0,180)" class="courseCategoryBody">
+<body onload="window.scrollTo(0,180)">
 
     <!-- Navbar definition -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -62,13 +65,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses
                             <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li> <a href="www.google.it">By level </a> </li>
-                            <li> <a href="www.google.it">All </a> </li>
+                            <li> <a href="../html/bylevel.html">By level </a> </li>
+                            <li> <a href="../html/allCourses.html">All </a> </li>
                             <li> <a>Overall schedule</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Course Categories</a>
+                        <a href="../html/allCategory.html">Course Categories</a>
                     </li>
                     <li>
                         <a>Rooms</a>
@@ -82,7 +85,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../html/location.html">Location</a>
+                        <a href="../html/location.html#scrol">Location</a>
                     </li>
                     <li>
                         <a>Fees</a>
@@ -139,70 +142,20 @@
     </header>
 
     <!-- Page Content -->
-
-    <div class="courseCategoryContent">
+    <div class="GAGContent">
 
         <div class="courseCategoryTitle">
             OUR COURSE CATEGORY
         </div>
 
-        <div class="generalDescription">
-           <p>  Tired of training by yourself? <br><br>
-            Here a Big Gym we have a wide variety of courses for you to join. <br><br>
-            Whether you want to lose weight or or strengthen your muscles, we have the right course for you. <br> <br>
-Want to relax and get more flexible? Join our pilates class! <br> <br>
-Want to have an intense cardio session? Then spinning is the right choice for you. <br><br>
-These are only a couple of examples of the many courses you can join at Big Gym. <br>
-        </p>
-        </div>
-
-        <div class="courseList" >
-            <div class="category">
-                    <a href="GAG.html"></a>
-                    <h4 class="nameCategory1"></h4>
-
-                    <!-- Image -->
-                    <div class="imageInside">
-                        <img class="imageGAG"/>
-                    </div>
-
-                    <!-- Short description-->
-                    <div class="descriptionInside">
-                        <h5 class="descriptionCategory1"> </h5>
-                    </div>
-            </div>
-
-            <div class="category">
-                    <h4 class="nameCategory2"></h4>
-
-                    <!-- Image -->
-                    <div class="imageInside">
-                        <img class="imagePilates"/>
-                    </div>
-
-                    <!-- Short description-->
-                    <div class="descriptionInside">
-                        <h5 class="descriptionCategory2"> </h5>
-                    </div>
-            </div>
-
-            <div class="category">
-                    <h4 class="nameCategory3"></h4>
-
-                    <!-- Image -->
-                    <div class="imageInside">
-                        <img class="imageSpinning"/>
-                    </div>
-
-                    <!-- Short description-->
-                    <div class="descriptionInside">
-                        <h5 class="descriptionCategory3"> </h5>
-                    </div>
-            </div>
-
+        <div class="gagSubtitle">
+        <img class="backArrow" src="http://icons.iconseeker.com/ico/crystal-clear-actions/back-arrow.ico"/>
+        <h2 class="gagTitle" align="center">GAG</h2>
 
         </div>
+
     </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -210,8 +163,7 @@ These are only a couple of examples of the many courses you can join at Big Gym.
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
-    <script src="../js/getAllCategory.js"></script>
-
+    <script src="../js/script.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
