@@ -1,22 +1,4 @@
-/************ NOTES: .class or #idElement      **************/
-
-/* CSS FOR LOCATION PAGE*/
-#myMap {
-        width: 100%;
-        height: 300px;
-      }
-
-<<<<<<< HEAD
-aside {
-    float : left;
-    width : 25%;
-}
-=======
-#provadiv{
-     width:970px; margin:0 auto;
-}
-
-/* CSS FOR ALLCOURSECATEGORIES PAGE   */
+/********* CSS FOR ALLCOURSECATEGORIES PAGE   *********/
 
 /*
 #courseCategoryBody{
@@ -38,6 +20,7 @@ aside {
     background-color: wheat;
     font-weight: bolder;
     font-size: 40px;
+    text-align: center;
 }
 
 .generalDescription{
@@ -70,7 +53,7 @@ aside {
     margin-right: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: coral;
+    background-color: lightgray;
 }
 
 .descriptionInside{
@@ -78,8 +61,10 @@ aside {
     float: left;
     width: 50%;
     height: 100%;
-    font-size: 18px;
+    font-size: 25px;
     font-style: italic;
+    padding: 2%;
+    line-height: 1,5em;
 }
 
 .imageInside{
@@ -87,6 +72,38 @@ aside {
     float: left;
     width: 50%;
     height: 100%;
+    border: 1px solid red;
 }
 
->>>>>>> origin/master
+
+/*
+.imageInside{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid red;
+    margin: 10px;
+}*/
+
+.imageGAG,
+.imagePilates,
+.imageSpinning{
+    width: 100%;
+}
+
+/***** Make div linkable ****/
+div.category {
+    position: relative;
+}
+
+div.category a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* No underlines on the link*/
+    z-index: 10; /* Places the link above everything else in the div*/
+    background-color: #FFF; /* Fix to make div clickable in IE  */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
