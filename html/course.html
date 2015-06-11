@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOCATION</title>
+    <title>Course</title>
 
     <!-- Bootstrap Core CSS -->
    <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -19,6 +19,8 @@
     <link href="../css/myCSS.css" rel="stylesheet">
     <link href="../css/course.css" rel="stylesheet">
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -144,9 +146,14 @@
     <div class="title">
         NOME_CORSO
     </div>
-    <div class="navigation">
-        navigation
+    <div class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" >
+        <div class="menu" ng-repeat="cat in courses">
+            <a href="google.com"> {{cat.record}} </a>
+            <div class="sub-menu" ng-repeat="c in cat.nome">                             <a  href="google.com"> {{c}} </a><br>
+            </div>
+        </div>
     </div>
+
     <div class="course">
         <div class="row">
             <div class="description">
@@ -162,6 +169,14 @@
             </div>
             <div class="description">
                 descr
+            </div>
+        </div>
+        <div class="row">
+            <div class="images">
+                image
+            </div>
+            <div class="images">
+                image
             </div>
         </div>
         <div class="row">
@@ -217,7 +232,8 @@
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
-    <script src="../js/course.js"></script>
+    <script src="../js/getCourses.js"></script>
+    <script src="../js/getAllCategory.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
