@@ -31,16 +31,7 @@
 .sub-menu{
     width:96%;
     :min-height: 350px;
-    padding-left: 3%;
-    background-color: aquamarine;
-    display: block;
-    float:left;
-    margin-left: 2%;
-}
-.tip{
-    width:96%;
-    :min-height: 350px;
-    padding-left: 3%;
+    padding-left: 5%;
     background-color: aquamarine;
     display: block;
     float:left;
@@ -49,14 +40,14 @@
 .course{
     display:block;
     float: left;
-    width: 69%;
+    width: 75%;
     min-height: 350px;
 
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: lightgray;
+    :margin-left: 2%;
+    :margin-right: 2%;
+    :margin-top: 2%;
+    :margin-bottom: 2%;
+    background-color: lightslategray;
 }
 .row{
     float: left;
