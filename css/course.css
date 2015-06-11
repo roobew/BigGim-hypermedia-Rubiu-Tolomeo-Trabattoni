@@ -4,51 +4,28 @@
     margin-right: 2%;
     background-color: blue;
 }
-
-.courseTitle{
+.title{
     background-color: wheat;
     font-weight: bolder;
     font-size: 40px;
     text-align: center;
 }
-.courseSubtitle{
-    width: auto;
-    display: block;
-    float: left;
-}
-.courseDescription{
-    font-size: 20px;
-    font-weight: 400;
-    width: 38%;
-    max-height:none;
-    background-color:darksalmon;
-    display: block;
-    float:left;
-}
-.courseList{
+
+.navigation{
     width:25%;
-    height: 100%;
+    min-height: 350px;
 
     background-color: lightgrey;
     display: block;
     float:left;
     margin-left: 2%;
+    margin-top: 2%;
 }
-.courseContent{
-    width:75%
-    height: 100%;
-
-    background-color: red;
-    display: block;
-    float:left;
-    margin-left: 0%;
-}
-
 .course{
     display:block;
     float: left;
-    width: 95%;
-    min-height: 150px;
+    width: 69%;
+    min-height: 350px;
 
     margin-left: 2%;
     margin-right: 2%;
@@ -56,6 +33,71 @@
     margin-bottom: 2%;
     background-color: lightgray;
 }
+.row{
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display:block;
+    width: 100%;
+}
+.description{
+    font-size: 20px;
+    float: none;
+    font-weight: 400;
+    width: 65%;
+    :max-height:none;
+    background-color:darksalmon;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.images{
+    display: block;
+    float:none;
+    width: 25%;
+    height: 100%;
+    border: 1px solid red;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.box{
+    display: block;
+    float: left;
+    width: 92%;
+    min-height: 100px;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.box-rounded{
+    display: block;
+    float: left;
+    width: 46%;
+    min-height: 98px;
+    height: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding-left: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 
 .backArrow{
     display: block;
@@ -68,6 +110,13 @@
 div.course {
     position: relative;
 }
+div.row {
+    position: relative;
+}
+div.box {
+    position: relative;
+}
+
 
 div.course a {
     position: absolute;
