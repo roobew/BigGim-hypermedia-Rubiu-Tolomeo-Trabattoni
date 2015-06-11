@@ -8,19 +8,20 @@
 }
 
 .gagSubtitle{
-    width: auto;
     display: block;
     float: left;
+    width: 100%;
 }
-.backArrow{
+.prova1{
     display: block;
     float: left;
-    width: 50%;
-    height: 50px;
-    margin: 20px;
+    background-color: red;
+    width: 10%;
 }
-.gagTitle{
+
+.prova2{
     display: block;
     float: left;
-    width: 50%;
+    background-color: cadetblue;
+    width: 90%;
 }

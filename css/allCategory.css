@@ -1,15 +1,5 @@
 /********* CSS FOR ALLCOURSECATEGORIES PAGE   *********/
 
-/*
-#courseCategoryBody{
-    height: 100%;
-}
-
-#courseBody>.courseCategoryContent{
-    height: auto;
-
-} */
-
 .courseCategoryContent{
     margin-left: 2%;
     margin-right: 2%;
@@ -61,12 +51,16 @@
     float: left;
     width: 50%;
     height: 100%;
-    font-size: 25px;
-    font-style: italic;
-    padding: 2%;
-    line-height: 1,5em;
+    padding-left: 3%;
+    padding-top: 5%;
 }
 
+.descriptionInside h5{
+        font-size: 18px;
+        font-style: italic;
+        line-height: 25px;
+
+}
 .imageInside{
     display: block;
     float: left;
@@ -74,15 +68,6 @@
     height: 100%;
     border: 1px solid red;
 }
-
-
-/*
-.imageInside{
-    width: 100%;
-    display: inline-block;
-    border: 1px solid red;
-    margin: 10px;
-}*/
 
 .imageGAG,
 .imagePilates,
