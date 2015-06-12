@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>LOCATION</title>
+    <title>Course</title>
 
     <!-- Bootstrap Core CSS -->
    <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -17,7 +17,10 @@
     <!-- Custom CSS -->
     <link href="../css/half-slider.css" rel="stylesheet">
     <link href="../css/myCSS.css" rel="stylesheet">
+    <link href="../css/course.css" rel="stylesheet">
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -139,8 +142,59 @@
 
     </header>
     <!-- Page Content -->
+<div class="pageContent">
+    <div class="title">
+        NOME_CORSO
+    </div>
+    <div class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" >
+        <div class="menu" ng-repeat="cat in courses">
+            {{cat.record}}
+            <div class="sub-menu" ng-repeat="c in cat.nome">
+                <a href ="#">{{c}}</a>
+            </div>
+        </div>
+    </div>
 
-        <div style="float:left;width:25%;padding-top:5%">
+    <div class="course">
+        <div class="row">
+            <div class="description">
+                descr
+            </div>
+            <div class="images">
+                image
+            </div>
+        </div>
+        <div class="row">
+            <div class="images">
+                image
+            </div>
+            <div class="description">
+                descr
+            </div>
+        </div>
+        <div class="row">
+            <div class="images">
+                image
+            </div>
+            <div class="images">
+                image
+            </div>
+        </div>
+        <div class="row">
+            SCHEDULE:
+            <div class="box">
+                <div class="box-rounded">
+                    box 1
+                </div>
+                <div class="box-rounded">
+                    box 2
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+       <!-- <div style="float:left;width:25%;padding-top:5%">
             aside
         </div>
             <div class="container" style="float:left;padding-top:5%;width:75%">
@@ -165,6 +219,7 @@
                             <h5>courses</h5>
                         </div>
                     </div>
+-->
 
 
 
@@ -178,7 +233,8 @@
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
-    <script src="../js/course.js"></script>
+    <script src="../js/getCourses.js"></script>
+    <script src="../js/getAllCategory.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
