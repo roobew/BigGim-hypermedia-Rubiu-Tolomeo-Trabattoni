@@ -150,12 +150,12 @@
     <!-- Page Content -->
 <div class="pageContent">
     <div class="title">
-        NOME_CORSO
+        <div class="courseName"></div>
     </div>
     <div class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" >
         <div class="menu" ng-repeat="cat in courses">
-            {{cat.record}}
-            <div class="sub-menu" ng-repeat="c in cat.nome">
+            {{cat.category}}
+            <div class="sub-menu" ng-repeat="c in cat.courses">
                 <a href ="#">{{c}}</a>
             </div>
         </div>
@@ -164,26 +164,27 @@
     <div class="course">
         <div class="row">
             <div class="description">
-                descr
+                <div class="descr"></div>
             </div>
             <div class="images">
-                image
+                <div class="img1"></div>
             </div>
         </div>
         <div class="row">
             <div class="images">
-                image
             </div>
             <div class="description">
-                descr
+                Target: <target></target>
+                <br>
+                Level: <level></level>
             </div>
         </div>
         <div class="row">
-            <div class="images">
-                image
+          <div class="description">
+                Specials Features: <spec></spec>
             </div>
             <div class="images">
-                image
+                <img src="img1" class="img-responsive"/>
             </div>
         </div>
         <div class="row">
@@ -200,35 +201,6 @@
 
     </div>
 </div>
-       <!-- <div style="float:left;width:25%;padding-top:5%">
-            aside
-        </div>
-            <div class="container" style="float:left;padding-top:5%;width:75%">
-                <div class="row">
-                    <img src="http://tinyurl.com/pafrtz2" style="float:right" class="img-responsive"  height="60" width="20%"/>
-                    <div class="panel" style="width:80%;word-wrap:break-word;">
-                        <h4>Mini DESCR</h4>
-                        <p>loremipsum</p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default" style="float:right;width:35%;padding-top:2%"  >
-                        <div class="panel-heading">
-                            <h3 class="panel-title">CATEGORY</h3>
-                        </div>
-                        <div class="panel-body">
-                            <h5>courses</h5>
-                            <h5>courses</h5>
-                            <h5>courses</h5>
-                            <h5>courses</h5>
-                            <h5>courses</h5>
-                            <h5>courses</h5>
-                        </div>
-                    </div>
--->
-
-
-
 
 
 
