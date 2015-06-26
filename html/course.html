@@ -153,10 +153,10 @@
         <div class="courseName"></div>
     </div>
     <div class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" >
-        <div class="menu" ng-repeat="cat in courses">
+        <div class="menu" ng-repeat="cat in coursesCat">
             {{cat.category}}
             <div class="sub-menu" ng-repeat="c in cat.courses">
-                <a href ="#">{{c}}</a>
+                <a href ="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
             </div>
         </div>
     </div>
