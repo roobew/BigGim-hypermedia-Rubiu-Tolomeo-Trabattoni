@@ -45,10 +45,31 @@
     margin-bottom: 2%;
     background-color: lightgray;
 }
+h4{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:sans-serif;
+}
 
-.descriptionInside{
-    display: block;
+
+.imageInside{
+    display: inline-block;
     float: left;
+    width: 50%;
+    height: 80%;
+    max-height: 200px;
+    border: 1px solid red;
+}
+
+.myImage{
+  display: block;
+  min-width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+.descriptionInside{
+    display: inline-block;
+    float: right;
     width: 50%;
     height: 100%;
     padding-left: 3%;
@@ -61,19 +82,7 @@
         line-height: 25px;
 
 }
-.imageInside{
-    display: block;
-    float: left;
-    width: 50%;
-    height: 100%;
-    border: 1px solid red;
-}
 
-.imageGAG,
-.imagePilates,
-.imageSpinning{
-    width: 100%;
-}
 
 /***** Make div linkable ****/
 div.category {

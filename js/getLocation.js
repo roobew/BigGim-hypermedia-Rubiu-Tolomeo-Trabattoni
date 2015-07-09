@@ -1,14 +1,12 @@
-$(document).ready(ready);
+$(document).ready(retrieveData);
 
-function ready() {
+function retrieveData() {
     console.log("I'm ready!");
-    //var id=1;
-
 
  $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "http://hypermediabiggym.altervista.org/getLocation.php", //Relative or absolute path to file.php file
+        url: "http://hypermediabiggym.altervista.org/getLocation.php",
         success: function(response) {
                 console.log(JSON.parse(response));
                 var location=JSON.parse(response);
@@ -16,7 +14,7 @@ function ready() {
                 $(".city").html(location[0].city);
                 $(".phone").html(location[0].phone);
                 $(".mail").html(location[0].email);
-            gMaps(location[0].address+location[0].city);
+                drawMap(location[0].address+" "+location[0].city);
         },
         error: function(request,error)
         {
@@ -26,42 +24,44 @@ function ready() {
     });
 }
 
+function drawMap(address){
+  var myGeocoder = new google.maps.Geocoder();
+  var myLatlng;
+  var mapOptions = {
+    zoom: 15,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('myMap'), mapOptions);
 
-    // Google Maps config
-///*
+    //**** Geocode allows to translate an address into coordinates
+  myGeocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      map.setCenter(results[0].geometry.location);
 
-function gMaps(address){
-    var mapCanvas = document.getElementById('myMap');
-    var latitude;
-    var longitude;
-    var geocoder = new google.maps.Geocoder();
+        // Create a marker in the position founded by geocode function
+        var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
 
+        // Create an infoview when mouse is over and close it when it's out
+        var contentString = "<p><b> BIG GYM FITNESS CENTER</b> <p>";
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
 
+        google.maps.event.addListener(marker, 'mouseover', function() {
+            infowindow.open(map,marker);
+        });
 
-    geocoder.geocode({ 'address': address }, function (results, status) {
-            var myLat=results[0].geometry.location.lat();
-            var myLong=results[0].geometry.location.lng();
+        google.maps.event.addListener(marker, 'mouseout', function() {
+            infowindow.close();
+        });
 
-            var myLatLng = new google.maps.LatLng(myLat,myLong);
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
 
-            var mapOptions = {
-                    center: myLatLng ,
-                    zoom: 15,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-
-            var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map,
-                    title: 'Hello World!'
-            });
-
-    });
-  google.maps.event.addDomListener(window, 'load',gMaps);
-
-
-//*/
 
 }
