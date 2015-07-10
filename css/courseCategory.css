@@ -1,0 +1,62 @@
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+   /* #button{
+        display: block;
+        width: 100%;;
+        max-width: 10em;
+    }*/
+
+    #whatIs{
+        border-left: 0.1em solid black;
+    }
+
+    #benefits{
+         border-left: 0.1em solid black;
+         border-right: 0.1em solid black;
+    }
+
+    #courseList{
+        border-right: 0.1em solid black;
+    }
+
+    h1{
+        color: red;
+        font-size: 3.5em;
+    }
+    h3{
+        font-size: 2.5;
+    }
+}
+
+
+@media only screen and (max-width : 430px) {
+    h1{
+        color: red;
+    }
+}
+
+#button{
+    margin: 1em;
+}
+
+#otherCategoryList{
+
+}
+h1{
+    text-align: center;
+
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#whatIs{
+
+}
+
+#benefits{
+    <!-- background-color: lightsteelblue; -->
+    min-height: 100%;
+}
