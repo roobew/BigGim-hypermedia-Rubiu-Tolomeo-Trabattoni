@@ -1,4 +1,4 @@
-@media only screen and (max-width : 767px) {
+/*@media only screen and (max-width : 767px) {
     #buttonList{
         display: none;
         }
@@ -9,7 +9,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
+     For desktop:
 
     #categoryNavBar{
         display: none;
@@ -27,13 +27,6 @@
         border-right: 0.1em solid black;
     }
 
-    h1{
-        color: red;
-        font-size: 3.5em;
-    }
-    h3{
-        font-size: 2.5em;
-    }
 }
 
 
@@ -69,4 +62,88 @@ h3{
 #benefits{
     <!-- background-color: lightsteelblue; -->
     min-height: 100%;
+}*/
+
+@media only screen and (min-width: 768px) {
+.otherStuff{
+    display:inline-block;
+    float: left;
+    height: auto;
+    width:15%;
+    position: relative;
+    top: 2em;
+}
+
+.categoryPageContent{
+    display:inline-block;
+    height: auto;
+    width: 85%;
+    border-left: 0.2em solid black;
+    padding-left: 1em;
+}
+
+.otherCategory{
+    padding: 1em;
+    font-weight: bold;
+    position: relative;
+    top:3em;
+}
+
+#backButton{
+    color:red;
+    margin-left: 1em;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    color:green;
+}
+
+h3{
+    color:blue;
+    font-size: 1.5em;
+}
+
+.subtitle{
+    display: inline-block;
+    float: left;
+    height: auto;
+}
+
+#whatIs{
+    width:30%;
+}
+#benefits{
+    width: 30%;
+}
+
+#myImage{
+    width:40%;
+    border-radius: 3em;
+}
+
+#courseList{
+    width=40%;
+    margin: 1em;
+    max-width: 15em;
+}
+#instructorList{
+    width: 40%;
+    margin: 1em;
+
+    position: relative;
+    left: 4em;
+    max-width: 15em;
+}
+}
+
+@media only screen and (max-width: 768px) {
+ *{
+     color: red;
+ }
+
+ .otherCategory{
+    display:none;
+ }
 }
