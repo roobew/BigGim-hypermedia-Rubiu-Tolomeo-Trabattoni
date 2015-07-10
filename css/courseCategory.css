@@ -1,12 +1,19 @@
+@media only screen and (max-width : 767px) {
+    #buttonList{
+        display: none;
+        }
 
-@media only screen and (min-width: 1000px) {
+    h1{
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 768px) {
     /* For desktop: */
-   /* #button{
-        display: block;
-        width: 100%;;
-        max-width: 10em;
-    }*/
 
+    #categoryNavBar{
+        display: none;
+    }
     #whatIs{
         border-left: 0.1em solid black;
     }
@@ -25,15 +32,18 @@
         font-size: 3.5em;
     }
     h3{
-        font-size: 2.5;
+        font-size: 2.5em;
     }
 }
 
 
-@media only screen and (max-width : 430px) {
-    h1{
-        color: red;
-    }
+#categoryNavBar{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#categoryNavBarTitle{
+    font-weight: bold;
 }
 
 #button{
