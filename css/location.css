@@ -1,8 +1,10 @@
 /* CSS FOR LOCATION PAGE*/
+@media screen and (min-width: 768px) {
 #myMap {
         width: 100%;
         height: 300px;
       }
+
 
 aside {
     float : left;
@@ -12,3 +14,23 @@ aside {
 #provadiv{
      width:970px; margin:0 auto;
 }
+.well{
+    width: 48%;
+    float: left;
+    margin: 1%;
+}
+}
+
+@media screen and (max-width: 768px) {
+#myMap {
+        width: 100%;
+        height: 300px;
+      }
+.well{
+    width: 98%;
+    :float: left;
+    margin: 1%;
+}
+}
+
+
