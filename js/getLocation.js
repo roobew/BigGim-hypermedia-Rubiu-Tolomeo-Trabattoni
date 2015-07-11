@@ -6,7 +6,7 @@ function retrieveData() {
  $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "http://hypermediabiggym.altervista.org/getLocation.php",
+        url: "http://hypermediabiggym.altervista.org/Location/getLocation.php",
         success: function(response) {
                 console.log(JSON.parse(response));
                 var location=JSON.parse(response);

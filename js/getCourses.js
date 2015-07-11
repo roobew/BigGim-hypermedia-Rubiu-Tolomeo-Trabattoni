@@ -1,7 +1,7 @@
 var app = angular.module("Courses", []);
 
 app.controller("CoursesCtrl", function($scope, $http) {
-  $http.get("http://hypermediabiggym.altervista.org/getCourses.php").
+  $http.get("http://hypermediabiggym.altervista.org/Course/getCourses.php").
     success(function(data, status, headers, config) {
       $scope.coursesCat = data;
     }).
@@ -43,7 +43,7 @@ function ready() {
  $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
-        url: "http://hypermediabiggym.altervista.org/getCourse.php", //Relative or absolute path to file.php file
+        url: "http://hypermediabiggym.altervista.org/Course/getCourse.php", //Relative or absolute path to file.php file
      data: { 'dato' : idCourse},
         success: function(response) {
                 console.log(JSON.parse(response));

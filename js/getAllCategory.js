@@ -34,7 +34,7 @@ function getAllCategoryData() {
 var app = angular.module("Category", []);
 
 app.controller("CategoryCtrl", function($scope, $http) {
-  $http.get("http://hypermediabiggym.altervista.org/getAllCategory.php").
+  $http.get("http://hypermediabiggym.altervista.org/AllCategory/getAllCategory.php").
     success(function(data, status, headers, config) {
       $scope.categories = data;
     }).
