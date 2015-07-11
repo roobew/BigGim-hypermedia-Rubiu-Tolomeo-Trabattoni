@@ -152,14 +152,7 @@
     <div class="title">
         <div class="courseName"></div>
     </div>
-    <div class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" >
-        <div class="menu" ng-repeat="cat in coursesCat">
-            {{cat.category}}
-            <div class="sub-menu" ng-repeat="c in cat.courses">
-                <a href ="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
-            </div>
-        </div>
-    </div>
+
 
     <div class="course">
         <div class="row">
@@ -198,11 +191,48 @@
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+
+   <!-- <nav class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" id="categories">
+        <ul class="menu" ng-repeat="cat in coursesCat">
+            {{cat.category}}
+            <li class="sub-menu" ng-repeat="c in cat.courses">
+                <a href ="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
+            </li>
+        </ul>
+    </nav>
+-->
+
+    <!---------------------------------------------------------------------------------------------------------------->
+
+    <nav class="navbar navbar-default navbar-fixed-left">
+        <div class="navigation">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#categories">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+              </button>
+               <a class="navbar-brand">All Courses</a>
+            </div>
+            <div class="collapse navbar-collapse" id="categories">
+               <div ng-app="Courses" ng-controller="CoursesCtrl">
+                    <ul class="menu" ng-repeat="cat in coursesCat">
+                        {{cat.category}}
+                        <li class="sub-menu" ng-repeat="c in cat.courses">
+                            <a href ="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
+    <!---------------------------------------------------------------------------------------------------------------->
+
+ </div>
 
     <!-- /.container -->
 
