@@ -8,6 +8,7 @@ function retrieveData() {
         crossDomain: true, //localhost purposes
         url: "http://hypermediabiggym.altervista.org/Location/getLocation.php",
         success: function(response) {
+                //console.log(response);
                 console.log(JSON.parse(response));
                 var location=JSON.parse(response);
                 $(".address").html(location[0].address);
