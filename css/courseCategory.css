@@ -32,7 +32,7 @@
 h1{
     text-align: center;
     font-size: 4em;
-    color:green;
+    color:red;
 }
 
 h3{
@@ -40,51 +40,77 @@ h3{
     font-size: 1.5em;
 }
 
-.subtitle{
-    display: inline-block;
-    float: left;
-    height: auto;
+#whatIs, #benefits, .myImageDiv
+    {
+    margin-left: 0.5em;
+
+}
+
+#courseList, #instructorList{
+    margin-left: 2em;
 }
 
 #whatIs{
+    display: block;
+    float: left;
     width:30%;
+    height: auto;
 }
 #benefits{
+    display: block;
+    float: left;
     width: 30%;
+    height: auto;
 }
 
+.myImageDiv{
+    display: block;
+    float: left;
+    width:35%;
+    height: auto;
+}
 #myImage{
-    width:40%;
     border-radius: 3em;
+
+}
+
+.endRow{
+    clear:both;
 }
 
 #courseList{
+    display: block;
     float: left;
-    width=40%;
-    margin: 1em;
-    max-width: 15em;
+    width:45%;
+
 }
 #instructorList{
-    width: 40%;
-    margin: 1em;
-
-    position: relative;
-    left: 4em;
-    max-width: 15em;
+    display: block;
+    float: left;
+    width: 45%;
 }
-    #otherCategoryNavBar{
+#otherCategoryNavBar{
         display: none;
     }
 }
 
 @media only screen and (max-width: 768px) {
- *{
-     color: red;
- }
+
+    #whatIs, #benefits, .myImageDiv,
+    #courseList, #instructorList
+    {
+        margin-top: 0.5em;
+
+    }
 
     h1{
         text-align: center;
-        font-size: 3em;
+        font-size: 3.5em;
+    }
+
+    h3{
+        color: blue;
+        font-size: 2em;
     }
 
  .otherCategory{
