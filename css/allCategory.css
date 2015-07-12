@@ -46,12 +46,12 @@
 
 
 .imageInside{
-    :display: inline-block;
+    display: inline-block;
     float: left;
     width: 40%;
     height: 100%;
     max-height: 100%;
-    :border: 1px solid red;
+    border: 1px solid red;
 }
 
 .myImage{
