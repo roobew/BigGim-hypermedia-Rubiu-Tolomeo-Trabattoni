@@ -166,11 +166,14 @@
 
         <div class="navigation" id="courseList" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
             <div ng-repeat ="tc in taughtCourses" class="category">
-                    <div class="panel panel-default">
-                        <div class= "panel-heading">
-                            <a href="/html/course.html?idCourse={{tc.id}}">{{tc.nome}}, {{tc.name}}</a>
+                    <div class="panel panel-default" id="taughtCourses">
+                        <div class="panel-heading">{{tc.category}}</div>
+                    <div class="panel-body">
+                        <div class= "panel-heading" ng-repeat="c in tc.courses">
+                            <a href="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
 
@@ -183,12 +186,20 @@
                 <div id="image-container"></div>
                 <div class="bio"></div>
                 </div>
-
+            </div>
+            <div class="panel panel-default insCV">
+                <div class="panel-heading headerCV">Qualifications</div>
             <div class="panel-body">
                 <div class="qual"></div>
+                 </div>
+            </div>
+            <div class="panel panel-default insCV">
+                <div class="panel-heading headerCV">Awards</div>
+                <div class="panel-body">
+                 <div class="awards"></div>
+                </div>
             </div>
 
-            </div>
 
     </div>
     <!-- /.container -->

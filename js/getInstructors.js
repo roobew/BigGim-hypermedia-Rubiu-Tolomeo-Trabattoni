@@ -62,6 +62,7 @@ function ready() {
                 //$(".qual").html(location[idIns - 1].qualifications);
                 //img.src = location[idIns - 1].img;
              $(".qual").html(location[0].qualifications);
+            $(".awards").html(location[0].awards);
             img.src = location[0].img;
                 img.classList.add("insImage");
                 //ing.classList.add("img-responsive");
