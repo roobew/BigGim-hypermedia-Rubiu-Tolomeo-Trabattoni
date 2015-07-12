@@ -46,7 +46,7 @@ function getData(){
                 $(".nameCategory").html(category[0].name);
                 $(".whatIsIt").html(category[0].description);
                 $(".benefitsAndSubjects").html(category[0].benefit);
-                $("#myImage").attr("src" , category[0].img);
+                $("#myImage").attr("src" , category[0].page_img);
         },
         error: function(request,error)
         {

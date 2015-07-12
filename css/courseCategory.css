@@ -69,8 +69,10 @@ h3{
     width:35%;
     height: auto;
 }
+
 #myImage{
     border-radius: 3em;
+    max-width: 90%;
 
 }
 
@@ -94,6 +96,8 @@ h3{
     }
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
     #whatIs, #benefits, .myImageDiv,
@@ -104,6 +108,7 @@ h3{
     }
 
     h1{
+        color: red;
         text-align: center;
         font-size: 3.5em;
     }
