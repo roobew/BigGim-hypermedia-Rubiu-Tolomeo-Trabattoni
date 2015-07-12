@@ -1,3 +1,4 @@
+/*
 var app = angular.module("Instructor", []);
 
 app.controller("InstructorCtrl", function($scope, $http) {
@@ -9,7 +10,7 @@ app.controller("InstructorCtrl", function($scope, $http) {
       // log error
     });
 });
-
+*/
 
 function getUrlParameters(parameter, staticURL, decode){
    /*
@@ -52,12 +53,16 @@ function ready() {
         success: function(response) {
                 console.log(JSON.parse(response));
                 var location=JSON.parse(response);
-                $(".name").html(location[idIns - 1].surname + ", " + location[idIns - 1].name);
+                //$(".name").html(location[idIns - 1].surname + ", " + location[idIns - 1].name);
+            $(".name").html(location[0].surname + ", " + location[0].name);
                 //$(".descr").html(location[idIns - 1].shortDescription);
-                $(".bio").html(location[idIns - 1].biography);
+                //$(".bio").html(location[idIns - 1].biography);
+            $(".bio").html(location[0].biography);
                 //$("#img").attr("src" , location.img);
-                $(".qual").html(location[idIns - 1].qualifications);
-                img.src = location[idIns - 1].img;
+                //$(".qual").html(location[idIns - 1].qualifications);
+                //img.src = location[idIns - 1].img;
+             $(".qual").html(location[0].qualifications);
+            img.src = location[0].img;
                 img.classList.add("insImage");
                 //ing.classList.add("img-responsive");
                 document.getElementById("image-container").appendChild(img);

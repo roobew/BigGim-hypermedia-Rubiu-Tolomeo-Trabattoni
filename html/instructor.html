@@ -148,14 +148,13 @@
 
     </header>
    <!-- Page Content -->
-    <div class="courseCategoryContent">
+    <div class="container-fluid">
+        <div class="page-header title"><h1>Instructor</h1></div>
 
-        <div class="courseCategoryTitle">
-        </div>
-
+        <!--
         <div class="navigation" ng-app="Instructor" ng-controller="InstructorCtrl">
             <div ng-repeat ="ins in instructors" class="category">
-                    <div class="panel panel-default">
+                    <div class="panel panel-default" id="insList">
                         <div class= "panel-heading">
                             <a href="/html/instructor.html?idIns={{ins.id}}">{{ins.surname}}, {{ins.name}}</a>
                         </div>
@@ -163,7 +162,9 @@
             </div>
         </div>
 
-        <div class="navigation" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
+        -->
+
+        <div class="navigation" id="courseList" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
             <div ng-repeat ="tc in taughtCourses" class="category">
                     <div class="panel panel-default">
                         <div class= "panel-heading">
@@ -174,14 +175,12 @@
         </div>
 
 
-        <div class="course">
-            <div class="instructor-profile">
-            <div class="panel panel-default">
+            <div class="panel panel-default" id="insProfile">
                 <div class="panel-heading">
                 <div class="name"></div>
-                    </div>
-                <div id="image-container"></div>
+                </div>
                 <div class="panel-body">
+                <div id="image-container"></div>
                 <div class="bio"></div>
                 </div>
 
@@ -190,8 +189,6 @@
             </div>
 
             </div>
-                </div>
-    </div>
 
     </div>
     <!-- /.container -->
