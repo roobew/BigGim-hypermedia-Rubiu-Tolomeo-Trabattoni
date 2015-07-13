@@ -182,9 +182,10 @@
                         </div>
                         <div class="bio">
                         </div>
-                         <div class="twitterApi">
-                <a class="twitter-timeline" href="https://twitter.com/biggymdave" data-widget-id="620610919576510464">Tweets by @biggymdave</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                         <div class="twitterApi" id="twitterApi">
+        <!--   <a class="twitter-timeline" id="twitter">Tweets by @biggymdave</a> -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>twttr.widgets.load()</script>
                     </div>
                     </div>
                 </div>
@@ -262,10 +263,8 @@
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
-
     <script src="../js/getInstructors.js"></script>
     <script src="../js/getTaughtCourses.js"></script>
-
 
     <!-- <script src="../js/getAllInstructors.js"></script> -->
     <!-- Bootstrap Core JavaScript -->
@@ -277,6 +276,7 @@
         interval: 5000 //changes the speed
     })
     </script>
+
 
 </body>
 

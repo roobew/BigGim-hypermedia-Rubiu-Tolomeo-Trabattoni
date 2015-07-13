@@ -63,10 +63,16 @@ function ready() {
                 //img.src = location[idIns - 1].img;
              $(".qual").html(location[0].qualifications);
             $(".awards").html(location[0].awards);
+            //$("#twitter").attr("href", location[0].twitterurl);
+            //$("#twitter").attr("data-widget-id", location[0].twitterid);
+            //$("#twitter").attr("data-screen-name", "biggymdave");
+            $(".twitterApi").html('<a class="twitter-timeline" href="' + location[0].twitterurl + '" data-widget-id="' + location[0].twitterid + '"></a>');
+
             img.src = location[0].img;
                 img.classList.add("insImage");
                 //ing.classList.add("img-responsive");
                 document.getElementById("image-container").appendChild(img);
+                twttr.widgets.load();
         },
         error: function(request,error)
         {
