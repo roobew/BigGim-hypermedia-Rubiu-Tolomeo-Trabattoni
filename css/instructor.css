@@ -1,5 +1,73 @@
+@media screen and (min-width: 768px){
+    .insContent, .insInformation{
+        display: block;
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 1em;
+    }
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    #myButtonDiv{
+        margin: 0.8em;
+    }
+
+    #myImage{
+        border:0.2em solid red;
+        border-radius: 1.5em;
+    }
+    .image-container{
+        display: block;
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    .bio{
+        display: block;
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    #qualification{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #awards, #courses{
+        display: block;
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    .emptyDiv{
+        clear: both;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 @media screen and (min-width: 768px) {
-    /*******  COURSE PAGE   *******/
+    /*******  COURSE PAGE   *******
 .pageContent{
     width: 960px;
     height: 100%;
@@ -92,7 +160,7 @@
 
 .insContent{
     width:50%;
-    heigth:100%;
+    height:100%;
 }
 
 .coursesContent{
@@ -102,7 +170,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    /*******  COURSE PAGE   *******/
+    /*******  COURSE PAGE   *******
 .pageContent{
 
     margin-left: 1%;
@@ -172,3 +240,4 @@
 }
 
 }
+*/

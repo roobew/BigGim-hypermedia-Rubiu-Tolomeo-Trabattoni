@@ -148,8 +148,7 @@
 
     </header>
    <!-- Page Content -->
-    <div class="container-fluid">
-        <div class="page-header title"><h1>Instructor</h1></div>
+
 
         <!--
         <div class="navigation" ng-app="Instructor" ng-controller="InstructorCtrl">
@@ -164,48 +163,92 @@
 
         -->
 
-            <div class="insContent">
-            <div class="panel panel-default" id="insProfile">
-                <div class="panel-heading">
-                <div class="name"></div>
-                </div>
-                <div class="panel-body">
-                <div id="image-container"></div>
-                <div class="bio"></div>
-                </div>
+        <div class="container-fluid">
+            <div class="page-header title">
+                <h1>Instructor</h1>
             </div>
-            <div class="panel panel-default insCV">
-                <div class="panel-heading headerCV">Qualifications</div>
-            <div class="panel-body">
-                <div class="qual"></div>
-                 </div>
+            <div id="myButtonDiv">
+                <a href="allCategory.html">
+                    <button class="btn btn-primary" type="button" id="backButton"> BACK </button>
+                </a>
             </div>
-            <div class="panel panel-default insCV">
-                <div class="panel-heading headerCV">Awards</div>
-                <div class="panel-body">
-                 <div class="awards"></div>
-                </div>
-            </div>
-        </div>
 
-                      <div class="coursesContent">
-        <div class="navigation" id="courseList" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
-            <div ng-repeat ="tc in taughtCourses" class="category">
-                    <div class="panel panel-default" id="taughtCourses">
-                        <div class="panel-heading">{{tc.category}}</div>
+            <div class="insContent">
+                <div class="panel panel-default" id="insProfile">
+                    <div class="panel-heading">
+                        <h3>nome, cognome </h3>
+                    </div>
                     <div class="panel-body">
-                        <div class= "panel-heading" ng-repeat="c in tc.courses">
-                            <a href="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
+                        <div class="image-container">
+                            <img class="img-responsive" id="myImage" src="http://pad3.whstatic.com/images/thumb/8/8d/Become-a-Martial-Arts-Instructor-Step-4-Version-2.jpg/670px-Become-a-Martial-Arts-Instructor-Step-4-Version-2.jpg"/>
+                        </div>
+                        <div class="bio">
+                            <p>BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO BIO
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="insInformation">
+                <div class="panel panel-default" id="qualification">
+                    <div class="panel-heading">
+                        <h4>Qualifications</h4>
+                    </div>
+
+                    <div class="panel-body">
+                        <p> QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL QUAL
+                        </p>
+
+                    </div>
+                </div>
+                <div class="emptyDiv"> </div>
+
+                <div class="panel panel-default" id="awards">
+                    <div class="panel-heading">
+                        <h4>Awards</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p> AWARDS AWARDS AWARDS AWARDS AWARDS AWARDS AWARDS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="courses">
+                    <div class="panel-heading">
+                        <h4>Courses</h4>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li> corso 1 </li>                                                                                   <li> corso 2 </li>
+                            <li> corso 3 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="emptyDiv"> </div>
             </div>
+            <div class="emptyDiv"> </div>
+        </div>
 
+<!--
+            <div class="coursesContent">
+                <div class="navigation" id="courseList" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
 
-
+                    <div ng-repeat ="tc in taughtCourses" class="category">
+                        <div class="panel panel-default" id="taughtCourses">
+                            <div class="panel-heading">{{tc.category}}</div>
+                            <div class="panel-body">
+                                <div class= "panel-heading" ng-repeat="c in tc.courses">
+                                    <a href="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
     </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
@@ -213,8 +256,11 @@
 
     <!-- myJS -->
     <script src="../js/myJS.js"></script>
+    <!--
     <script src="../js/getInstructors.js"></script>
     <script src="../js/getTaughtCourses.js"></script>
+    -->
+
     <!-- <script src="../js/getAllInstructors.js"></script> -->
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
