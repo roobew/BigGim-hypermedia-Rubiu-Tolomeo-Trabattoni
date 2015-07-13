@@ -160,15 +160,16 @@
 
                     <div class="panel-group" ng-repeat="basic in basicCourseList">
                         <div class="panel panel-default" id="coursePanel">
-                            <div class="panel-heading">
-                                <h3>{{basic.nome}} </h3>
-                            </div>
-
-                            <div class="panel-body">
-                                <div class="imageContainer">
-                                    <img class="img-responsive" id="myImage" src="{{basic.intro_img}}"/>
+                            <a href="../html/course.html?id={{basic.id}}">
+                                <div class="panel-heading">
+                                    <h3>{{basic.nome}} </h3>
                                 </div>
 
+                                <div class="panel-body">
+                                    <div class="imageContainer">
+                                        <img class="img-responsive" id="myImage" src="{{basic.intro_img}}"/>
+                                    </div>
+                            </a>
                                 <div class="infoCourse">
                                     <p class="courseDescription"> {{basic.description}} </p>
                                 </div>
@@ -184,15 +185,16 @@
 
                     <div class="panel-group">
                         <div class="panel panel-default" id="coursePanel" ng-repeat="medium in mediumCourseList">
-                            <div class="panel-heading">
-                                <h3>{{medium.nome}} </h3>
-                            </div>
-
-                            <div class="panel-body">
-                                <div class="imageContainer">
-                                    <img class="img-responsive" id="myImage" src="{{medium.intro_img}}"/>
+                            <a href="../html/course.html?id={{medium.id}}">
+                                <div class="panel-heading">
+                                    <h3>{{medium.nome}} </h3>
                                 </div>
 
+                                <div class="panel-body">
+                                    <div class="imageContainer">
+                                        <img class="img-responsive" id="myImage" src="{{medium.intro_img}}"/>
+                                    </div>
+                            </a>
                                 <div class="infoCourse">
                                     <p class="courseDescription"> {{medium.description}}</p>
                                 </div>
@@ -206,6 +208,7 @@
                 <div id="levelAdvanced" ng-controller="advancedCtrl">
                     <h3 id="levelName"> ADVANCED </h3>
                     <div class="panel panel-default" id="coursePanel" ng-repeat="advanced in advancedCourseList">
+                        <a href="../html/course.html?id={{advanced.id}}">
                             <div class="panel-heading">
                                 <h3> {{advanced.nome}}</h3>
                             </div>
@@ -214,7 +217,7 @@
                                 <div class="imageContainer">
                                     <img class="img-responsive" id="myImage" src="{{advanced.intro_img}}"/>
                                 </div>
-
+                        </a>
                                 <div class="infoCourse">
                                     <p class="courseDescription"> {{advanced.description}} </p>
                                 </div>
