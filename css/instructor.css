@@ -28,7 +28,7 @@
 
 #insProfile{
     float:left;
-    width:50%;
+    width:100%;
     height: 100%;
     //max-width:600px;
     //background-color: lightgrey;
@@ -69,13 +69,13 @@
     float: left;
     width:100%;
     height:100%;
-    display: inline-block
+    display: inline-block;
 }
 
 .insCV{
     display:inline-block;
     float:left;
-    width:25%;
+    width:50%;
     height: 100%;
     text-align:center;
 
@@ -90,7 +90,16 @@
 
 }
 
+.insContent{
+    width:50%;
+    heigth:100%;
+}
 
+.coursesContent{
+    position:relative;
+    top:-400px;
+    left: -400px;
+}
 
 @media screen and (max-width: 768px) {
     /*******  COURSE PAGE   *******/
