@@ -174,18 +174,26 @@
 
             <div class="insContent">
                 <div class="panel panel-default" id="insProfile">
-                    <div class="panel-heading name">
+                    <div class="panel-heading">
+                        <h3 class="name"></h3>
                     </div>
                     <div class="panel-body">
-                        <div class="image-container" id="image-container">
+                        <div class="imageContainer">
+                            <img class="img-responsive" id="imageProfile" src=""/>
                         </div>
-                        <div class="bio">
+                        <div class="instructorBio">
+                            <p class="bio"> </p>
                         </div>
-                         <div class="twitterApi" id="twitterApi">
+
+                        <div class="emptyDiv"> </div>
+
+                        <div class="twitterApi" id="twitterBox">
         <!--   <a class="twitter-timeline" id="twitter">Tweets by @biggymdave</a> -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script>twttr.widgets.load()</script>
-                    </div>
+                        </div>
+
+<!--                        <div class="toTheRight"> </div>-->
                     </div>
                 </div>
             </div>
@@ -196,18 +204,12 @@
                         <h4>Qualifications</h4>
                     </div>
 
-                    <div class="panel-body qual">
+                    <div class="panel-body">
+                        <p class="qual"> </p>
                     </div>
                 </div>
-                <div class="emptyDiv"> </div>
 
-                <div class="panel panel-default" id="awards">
-                    <div class="panel-heading">
-                        <h4>Awards</h4>
-                    </div>
-                    <div class="panel-body awards">
-                    </div>
-                </div>
+                <div class="emptyDiv"> </div>
 
                 <div class="panel panel-default" id="courses">
                     <div class="panel-heading">
@@ -219,7 +221,9 @@
 
                     <div ng-repeat ="tc in taughtCourses" class="category">
                         <div class="panel panel-default" id="taughtCourses">
-                            <div class="panel-heading">{{tc.category}}</div>
+                            <div class="panel-heading">
+                               <h5 id="categoryTitle"> {{tc.category}}</h5>
+                            </div>
                             <div class="panel-body">
                                 <div class= "panel-heading" ng-repeat="c in tc.courses">
                                     <a href="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
@@ -231,6 +235,16 @@
             </div>
                     </div>
                 </div>
+                <div class="panel panel-default" id="awards">
+                    <div class="panel-heading">
+                        <h4>Awards</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p class="awards"> </p>
+                    </div>
+                </div>
+
+
                 <div class="emptyDiv"> </div>
             </div>
             <div class="emptyDiv">

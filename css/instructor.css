@@ -1,8 +1,8 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1000px){
     .insContent, .insInformation{
         display: block;
         float: left;
-        width: 45%;
+        width: 46%;
         height: auto;
         margin: 1em;
     }
@@ -16,15 +16,16 @@
         margin: 0.8em;
     }
 
-    #myImage{
+    #imageProfile{
         border:0.2em solid red;
         border-radius: 1.5em;
     }
-    .image-container{
+    .imageContainer{
         display: block;
         float: left;
         width: 45%;
         height: auto;
+        max-height: 25em;
         margin: 0.5em;
     }
 
@@ -50,202 +51,77 @@
         margin: 0.5em;
     }
 
-    .twitterApi{
-        float:left;
-        width:50%;
-        height:60%;
-        margin-top: 2em;
-
+    #categoryTitle{
+        text-align: center;
     }
+    .twitterApi{
+        display: block;
+        float: left;
+        width: 45;
+        height: auto;
+        margin-top: 3em;
+    }
+
+/*
+    .toTherRight{
+        display: block;
+        float: left;
+        width: 45;
+        height: auto;
+    }
+*/
 
     .emptyDiv{
         clear: both;
     }
 }
 
+@media screen and (max-width:1000px){
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 3em;
+    }
+
+    #backButton, .bio{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
 
 
+    .imageContainer, .instructorBio{
+        display: block;
+        float: left;
+        width: 45%;
+        height: auto;
+        margin: 1em;
+        padding-left: 0.5em
+    }
 
+     #twitterBox{
+         width: auto;
 
-
-
-
-
-
-
-/*
-@media screen and (min-width: 768px) {
-    /*******  COURSE PAGE   *******
-.pageContent{
-    width: 960px;
-    height: 100%;
-    margin: 0px auto;
-    background-color: blue;
-}
-.title{
-    font-weight: bolder;
-    text-align: center;
-}
-
-.navigation{
-    width:20%;
-    height: 100%;
-    //background-color: lightgrey;
-    display: inline-block;
-    float:left;
+    }
 }
 
-#insList{
+@media screen and (max-width:680px){
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    .imageContainer, .instructorBio{
+        display: block;
+        float: left;
+        width: 90%;
+        height: auto;
+        margin: 1em;
+        padding-left: 0.5em
+    }
+
+    #imageProfile{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-#courseList{
-    float:right;
-}
-
-#insProfile{
-    float:left;
-    width:100%;
-    height: 100%;
-    //max-width:600px;
-    //background-color: lightgrey;
-    display: inline-block;
-}
-
-
-#image-container{
-    max-height: 300px;
-    max-width: 200px;
-    float: left;
-    display: inline-block;
-}
-
-.insImage{
-    height: inherit;
-    width: inherit;
-}
-
-.bio{
-    display: inline-block;
-    float:left;
-    width:30%;
-    height:100%;
-    font-family: sans-serif;
-    font-size: 1.2em;
-    position:relative;
-    top:5em;
-}
-
-.name{
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 160%;
-}
-
-#taughtCourses{
-    float: left;
-    width:100%;
-    height:100%;
-    display: inline-block;
-}
-
-.insCV{
-    display:inline-block;
-    float:left;
-    width:50%;
-    height: 100%;
-    text-align:center;
-
-}
-
-.headerCV{
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 120%;
-    text-align: center;
-}
-
-}
-
-.insContent{
-    width:50%;
-    height:100%;
-}
-
-.coursesContent{
-    position:relative;
-    top:-400px;
-    left: -400px;
-}
-
-@media screen and (max-width: 768px) {
-    /*******  COURSE PAGE   *******
-.pageContent{
-
-    margin-left: 1%;
-    margin-right: 1%;
-    background-color: blue;
-}
-.title{
-    background-color: wheat;
-    font-weight: bolder;
-    font-size: 30px;
-    text-align: center;
-}
-
-.navigation{
-    width:20%;
-    height: 100%;
-    //background-color: lightgrey;
-    display: block;
-    float:left;
-}
-
-#insList{
-    position: relative;
-    top: -100px;
-    float: top;
-}
-
-#image-container{
-    border: 2px solid red;
-    min-width: 50%;
-    max-width: 100%;
-    min-height: 50%;
-    max-height: 100%;
-    height: 250px;
-    width: 200px;
-}
-
-
-.insImage{
-    height:30px;
-    width:30px;
-}
-
-.instructor-profile{
-    width:40px;
-    height: 40px;
-
-    background-color: lightgrey;
-    display: block;
-    float:right;
-    margin-left: 2%;
-}
-
-.name{
-
-}
-
-
-.container{
-    width:200px;
-}
-
-#tcourses{
-    float: right;
-    width:50px;
-    height:50px;
-}
-
-}
-*/

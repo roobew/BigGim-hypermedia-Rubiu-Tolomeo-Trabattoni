@@ -44,34 +44,23 @@ $(document).ready(ready);
 function ready() {
     console.log("I'm ready!");
     var idIns =  getUrlParameters("idIns", "", true);
-    var img = new Image();
- $.ajax({
+
+    $.ajax({
         method: "POST",
         crossDomain: true, //localhost purposes
         url: "http://hypermediabiggym.altervista.org/Instructor/getInstructors.php", //Relative or absolute path to file.php file
      data: { 'dato' : idIns},
         success: function(response) {
                 console.log(JSON.parse(response));
-                var location=JSON.parse(response);
-                //$(".name").html(location[idIns - 1].surname + ", " + location[idIns - 1].name);
-            $(".name").html(location[0].surname + ", " + location[0].name);
-                //$(".descr").html(location[idIns - 1].shortDescription);
-                //$(".bio").html(location[idIns - 1].biography);
-            $(".bio").html(location[0].biography);
-                //$("#img").attr("src" , location.img);
-                //$(".qual").html(location[idIns - 1].qualifications);
-                //img.src = location[idIns - 1].img;
-             $(".qual").html(location[0].qualifications);
-            $(".awards").html(location[0].awards);
-            //$("#twitter").attr("href", location[0].twitterurl);
-            //$("#twitter").attr("data-widget-id", location[0].twitterid);
-            //$("#twitter").attr("data-screen-name", "biggymdave");
-            $(".twitterApi").html('<a class="twitter-timeline" href="' + location[0].twitterurl + '" data-widget-id="' + location[0].twitterid + '"></a>');
+                var instructor=JSON.parse(response);
 
-            img.src = location[0].img;
-                img.classList.add("insImage");
-                //ing.classList.add("img-responsive");
-                document.getElementById("image-container").appendChild(img);
+                $(".name").html(instructor[0].surname + ", " + instructor[0].name);
+                $(".bio").html(instructor[0].biography);
+                $(".qual").html(instructor[0].qualifications);
+                $(".awards").html(instructor[0].awards);
+                $("#imageProfile").attr("src" , instructor[0].img);
+                $(".twitterApi").html('<a class="twitter-timeline" href="' + instructor[0].twitterurl + '" data-widget-id="' + instructor[0].twitterid + '"></a>');
+
                 twttr.widgets.load();
         },
         error: function(request,error)

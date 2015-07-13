@@ -7,11 +7,10 @@
    : background-color: blue;
 }
 
-.courseCategoryTitle{
-    :background-color: wheat;
-    font-weight: bolder;
-    font-size: 40px;
+h1{
+    color: red;
     text-align: center;
+    font-size: 3em;
 }
 
 .generalDescription{
@@ -32,6 +31,9 @@
     margin-left: 1%;
 }
 
+.generalDescription, .courseList{
+    padding: 0.5em;
+}
 .category{
     :display:block;
     :float: left;
@@ -105,12 +107,13 @@ div.category a {
     :background-color: blue;
 }
 
-.courseCategoryTitle{
-    :background-color: wheat;
-    font-weight: bolder;
-    font-size: 25px;
+h1{
+    color: red;
     text-align: center;
+    font-size: 2em;
+    font-weight: bold;
 }
+
 
 .generalDescription{
     font-size: 15px;

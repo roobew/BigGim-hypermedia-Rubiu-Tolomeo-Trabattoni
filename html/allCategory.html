@@ -139,10 +139,10 @@
     </header>
 
     <!-- Page Content -->
-    <div class="courseCategoryContent">
+    <div class="container">
 
         <div class="courseCategoryTitle">
-            OUR COURSE CATEGORIES
+           <h1> OUR COURSE CATEGORIES </h1>
         </div>
 
         <div class="generalDescription">
@@ -159,6 +159,7 @@ These are only a couple of examples of the many courses you can join at Big Gym.
                 </div>
         </div>
         </div>
+
         <div class="courseList" ng-app="Category" ng-controller="CategoryCtrl">
             <div ng-repeat ="cat in categories" class="category">
                 <a href="/html/courseCategory.html?idCat={{cat.id}}"></a>
