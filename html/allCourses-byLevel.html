@@ -149,7 +149,7 @@
    <!-- Page Content -->
 
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="page-header title">
                 <h1>ALL COURSES - by level</h1>
             </div>
@@ -160,7 +160,7 @@
 
                     <div class="panel-group" ng-repeat="basic in basicCourseList">
                         <div class="panel panel-default" id="coursePanel">
-                            <a href="../html/course.html?id={{basic.id}}">
+                            <a href="../html/course.html?idCourse={{basic.id}}">
                                 <div class="panel-heading">
                                     <h3>{{basic.nome}} </h3>
                                 </div>
@@ -185,7 +185,7 @@
 
                     <div class="panel-group">
                         <div class="panel panel-default" id="coursePanel" ng-repeat="medium in mediumCourseList">
-                            <a href="../html/course.html?id={{medium.id}}">
+                            <a href="../html/course.html?idCourse={{medium.id}}">
                                 <div class="panel-heading">
                                     <h3>{{medium.nome}} </h3>
                                 </div>
@@ -208,7 +208,7 @@
                 <div id="levelAdvanced" ng-controller="advancedCtrl">
                     <h3 id="levelName"> ADVANCED </h3>
                     <div class="panel panel-default" id="coursePanel" ng-repeat="advanced in advancedCourseList">
-                        <a href="../html/course.html?id={{advanced.id}}">
+                        <a href="../html/course.html?idCourse={{advanced.id}}">
                             <div class="panel-heading">
                                 <h3> {{advanced.nome}}</h3>
                             </div>
