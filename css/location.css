@@ -11,6 +11,10 @@ aside {
     width : 25%;
 }
 
+h4,h5{
+    padding: 0.6em;
+}
+
 #provadiv{
      width:970px; margin:0 auto;
 }
@@ -30,6 +34,9 @@ aside {
     width: 98%;
     :float: left;
     margin: 1%;
+}
+    h4,h5{
+    padding: 0.3em;
 }
 }
 

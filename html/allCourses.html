@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
 
@@ -8,25 +8,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ALL COURSE CATEGORIES</title>
+
+    <title>All Courses</title>
 
     <!-- Bootstrap Core CSS -->
-
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-
+   <!-- <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../css/half-slider.css" rel="stylesheet">
-    <link href="../css/allCategory.css" rel="stylesheet">
+    <link href="../css/myCSS.css" rel="stylesheet">
+    <link href="../css/allCourses.css" rel="stylesheet">
 
-    <!-- Script to activate Google Maps -->
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <meta content="True" name="HandheldFriendly"></meta>
+
+    <meta content="320" name="MobileOptimized"></meta>
 
 </head>
 
 <body onload="window.scrollTo(0,180)">
-
     <!-- Navbar definition -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
@@ -83,7 +94,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../html/location.html">Location</a>
+                        <a href="../html/location.html#scrol">Location</a>
                     </li>
                     <li>
                         <a>Fees</a>
@@ -94,7 +105,6 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Half Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -138,57 +148,72 @@
         </a>
 
     </header>
+   <!-- Page Content -->
 
-    <!-- Page Content -->
-    <div class="courseCategoryContent">
 
-        <div class="courseCategoryTitle">
-            OUR COURSE CATEGORIES
-        </div>
+        <div class="container-fluid">
+            <div class="page-header title">
+                <h1>ALL COURSES</h1>
+            </div>
 
-        <div class="generalDescription">
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-            Tired of training by yourself? <br>
-            Here a Big Gym we have a wide variety of courses for you to join.
-            Whether you want to lose weight or or strengthen your muscles, we have the right course for you.
-Want to relax and get more flexible? Join our pilates class!
-Want to have an intense cardio session? Then spinning is the right choice for you.
-These are only a couple of examples of the many courses you can join at Big Gym.
+            <div class="container" id="generalContainer" ng-controller="courseContainerCtrl">
+                <div class="panel panel-default" id="singleCourseContainer" ng-repeat="c in allCourseList">
+                    <a href="../html/course.html?id={{c.id}}" >
+                        <div class="panel-heading">
+                            <h3> {{c.nome}} </h3>
+                        </div>
 
-                </div>
-        </div>
-        </div>
-        <div class="courseList" ng-app="Category" ng-controller="CategoryCtrl">
-            <div ng-repeat ="cat in categories" class="category">
-                <a href="/html/courseCategory.html?idCat={{cat.id}}"></a>
-                    <div class="panel panel-default">
-                        <div class= "panel-heading">{{cat.name}}</div>
                         <div class="panel-body">
-                        <!-- Image -->
-                            <div class="imageInside">
-                            <img ng-src="{{cat.intro_img}}" class="myImage"/>
+                            <div class="imageContainer">
+                                <img class="img-responsive" id="myImage" src="{{c.intro_img}}"/>
                             </div>
-                            <!-- Short description-->
-                            <div class="descriptionInside">
-                                <h5>{{cat.shortDescription}}</h5>
+
+                            <div class="infoCourse">
+                                <h4> LEVEL {{c.level}} </h4>
+                                <p class="courseDescription"> {{c.shortDesc}} </p>
+                            </div>
+
+                            <div class="emptyDiv"> </div>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="emptyDiv"> </div>
+        </div>
+
+<!--
+            <div class="coursesContent">
+                <div class="navigation" id="courseList" ng-app="TaughtCourses" ng-controller="TaughtCoursesCtrl">
+
+                    <div ng-repeat ="tc in taughtCourses" class="category">
+                        <div class="panel panel-default" id="taughtCourses">
+                            <div class="panel-heading">{{tc.category}}</div>
+                            <div class="panel-body">
+                                <div class= "panel-heading" ng-repeat="c in tc.courses">
+                                    <a href="/html/course.html?idCourse={{c.id}}">{{c.course}}</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-
-        </div>
+-->
     </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
 
-    <!-- myJS -->
+    <!-- my JS file -->
     <script src="../js/myJS.js"></script>
-    <script src="../js/getAllCategory.js"></script>
+    <script src="../js/getAllCourses.js"></script>
 
+
+    <!-- <script src="../js/getAllInstructors.js"></script> -->
     <!-- Bootstrap Core JavaScript -->
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 

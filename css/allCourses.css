@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px){
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    h3{
+        color: black;
+    }
+
+    #singleCourseContainer{
+        display: block;
+        float: left;
+        width: 47%;
+        height: auto;
+        margin: 1em;
+        border:0.2em solid black;
+
+    }
+
+    .imageContainer{
+        display: block;
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+
+    .infoCourse{
+        display: block;
+        float: left;
+        width: 50%;
+        height: auto;
+        padding: 1em;
+    }
+
+    .emptyDiv{
+        clear: both;
+    }
+
+    #myImage{
+        max-height: 12em;
+    }
+
+}
