@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 
 <head>
 
@@ -144,16 +144,22 @@
             <h1 class="nameCategory"> </h1>
         </div>
 
-        <div class="otherStuff">
+
+
+        <div class="otherStuff" ng-controller="otherCategoryCtrl">
             <a href="allCategory.html">
-                <button class="btn btn-primary" type="button" id="backButton"> BACK </button>
+                <button class="btn btn-primary" type="button" id="backButton"> ALL </button>
             </a>
-            <div class="otherCategoryList">
-                <p class="otherCategory">PILATES </p>
-                <p class="otherCategory">aaaaa </p>
-                <p class="otherCategory">bbbbb </p>
+            <div class="otherCategoryList" ng-repeat ="cat in categories">
+                <a href="/html/courseCategory.html?idCat={{cat.id}}">
+                    <p class="otherCategory">{{cat.name}} </p>
+                </a>
             </div>
         </div>
+
+
+
+
         <div class="categoryPageContent">
 
             <div class="panel panel-default" id="whatIs">
@@ -173,7 +179,7 @@
                 </div>
             </div>
             <div class="myImageDiv">
-                <img src="" id="myImage"/>
+                <img src="" id="myImage" class="img-responsive"/>
             </div>
 
             <div class="endRow"></div>
@@ -183,111 +189,63 @@
                 <div class="panel-heading">
                     <h3>COURSES</h3>
                 </div>
-                <div class="panel-body">
+
+
+                <div class="panel-body" ng-controller="listCourseCtrl">
                     <ul class="list-group" >
-                        <li class="list-group-item">Corso 1</li>
-                        <li class="list-group-item">Corso 2</li>
-                        <li class="list-group-item">Corso 3</li>
+                        <li class="list-group-item" ng-repeat="c in courses"> {{c.nome}}</li>
                     </ul>
                 </div>
+
+
             </div>
 
             <div class="panel panel-default" id="instructorList">
                 <div class="panel-heading">
                     <h3> INSTRUCTORS </h3>
                 </div>
-                <div class="panel-body">
+
+
+
+                <div class="panel-body" ng-controller="listInstructorCtrl">
                     <ul class="list-group" >
-                        <li class="list-group-item">Instructor 1</li>
-                        <li class="list-group-item">Instructor 2</li>
-                        <li class="list-group-item">Instructor 3</li>
+                        <li class="list-group-item" ng-repeat="i in instr">{{i.name}}</li>
                     </ul>
                 </div>
+
+
             </div>
             <div class="endRow"></div>
 
 
 
             <nav class="navbar navbar-inverse" id="otherCategoryNavBar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                <label class="navbar-brand" id="labelOtherCategory">OTHER CATEGORIES</label>
-                <label class="navbar-brand" id="labelOtherCategory2">CATEGORIES</label>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <label class="navbar-brand" id="labelOtherCategory">OTHER CATEGORIES</label>
+                        <label class="navbar-brand" id="labelOtherCategory2">CATEGORIES</label>
 
-                </div>
+                    </div>
 
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">cat 1</a></li>
-                        <li class="active"><a href="#">cat 2</a></li>
-                        <li class="active"><a href="#">cat 3</a></li>
-                    </ul>
-                </div>
+<!--
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <div ng-controller="otherCategoryCtrl">
+                            <ul class="nav navbar-nav" >
+                                <li class="active" ng-repeat ="cat in categories">
+                                    <a href=""> {{cat.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+-->
             </div>
         </nav>
         </div>
-
-           <!-- <div class="subtitle" id="whatIs">
-                <h3> WHAT IS IT</h3>
-                <p> description description description descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription descriptiondescription description</p>
-            </div>
-
-            <div class="subtitle" id="benefits">
-                <h3> BENEFITS AND SUBJECTS</h3>
-                <p>benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject benefitsAndSubject</p>
-
-            </div>
-
-            <img src="http://www.spazioindaco.com/sito/wp-content/uploads/2014/09/gag.jpg" class="img-responsive" id="myImage"/>
-
-
-            <div class="subtitle" id="courseList">
-                <h3> COURSES </h3>
-                <ul class="list-group" >
-                    <li class="list-group-item">Corso 1</li>
-                    <li class="list-group-item">Corso 2</li>
-                    <li class="list-group-item">Corso 3</li>
-                </ul>
-            </div>
-
-            <div class="subtitle" id="instructorList">
-                <h3> INSTRUCTORS </h3>
-                <ul class="list-group" >
-                    <li class="list-group-item">Instructor 1</li>
-                    <li class="list-group-item">Instructor 2</li>
-                    <li class="list-group-item">Instructor 3</li>
-                </ul>
-            </div>
-
-
-            <nav class="navbar navbar-inverse" id="otherCategoryNavBar">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                <label class="navbar-brand" id="labelOtherCategory">OTHER CATEGORIES</label>
-                <label class="navbar-brand" id="labelOtherCategory2">CATEGORIES</label>
-
-                </div>
-
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">cat 1</a></li>
-                        <li class="active"><a href="#">cat 2</a></li>
-                        <li class="active"><a href="#">cat 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        </div> -->
 </div>
 
     <!-- /.container -->

@@ -1,3 +1,71 @@
+//// ----**** GET CATEGORY LIST  ****--- \\
+//var app = angular.module("myApp", []);
+//
+//app.controller("otherCategoryCtrl", function($scope, $http) {
+//  $http.get("http://hypermediabiggym.altervista.org/CourseCategory/getOtherCourseCategory.php").
+//    success(function(data, status, headers, config) {
+//      $scope.categories = data;
+//    }).
+//    error(function(data, status, headers, config) {
+//      // log error
+//    });
+//});
+
+
+
+// ----**** GET COURSE LIST  ****--- \\
+
+var get = parseGetVars();
+var idCategory=get['idCat'];
+
+var app = angular.module("myApp", []);
+
+//****** controller to show ALL THE CATEGORIES ******\\
+app.controller("otherCategoryCtrl", function($scope, $http) {
+  $http.get("http://hypermediabiggym.altervista.org/CourseCategory/getOtherCourseCategory.php").
+    success(function(data, status, headers, config) {
+      $scope.categories = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
+
+//****** controller to show ALL THE COURSES RELATED TO ID CATEGORY ******\\
+app.controller("listCourseCtrl", function($scope, $http) {
+  $http({
+      url:"http://hypermediabiggym.altervista.org/CourseCategory/getCourseFromCategory.php",
+      method: "POST",
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      data: $.param({id: idCategory})
+      }).success(function(data, status, headers, config) {
+        console.log("course ok");
+        $scope.courses = data;
+      }).
+    error(function(data, status, headers, config) {
+        console.log("Errore");
+    });
+});
+
+//****** controller to show ALL THE INSTRUCTOR RELATED TO ID CATEGORY ******\\
+app.controller("listInstructorCtrl", function($scope, $http) {
+  $http({
+      url:"http://hypermediabiggym.altervista.org/CourseCategory/getInstructorFromCategory.php",
+      method: "POST",
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      data: $.param({id: idCategory})
+      }).success(function(data, status, headers, config) {
+        console.log("instr ok");
+        $scope.instr = data;
+      }).
+    error(function(data, status, headers, config) {
+        console.log("Errore");
+    });
+});
+
+
+
+
 function parseGetVars()
 {
   // creo una array
@@ -26,11 +94,13 @@ function parseGetVars()
   return args;
 }
 
+
+
 $(document).ready(getData);
 
 function getData(){
-    var get = parseGetVars();
-    var idCategory=get['idCat'];
+//    var get = parseGetVars();
+//    var idCategory=get['idCat'];
 
     //alert(idCategory);
     $.ajax({
@@ -40,7 +110,7 @@ function getData(){
 
         data: { 'id' : idCategory},
         success: function(response) {
-                console.log(response);
+                //console.log(response);
                 var category=JSON.parse(response);
                 //alert(category[0]);
                 $(".nameCategory").html(category[0].name);
