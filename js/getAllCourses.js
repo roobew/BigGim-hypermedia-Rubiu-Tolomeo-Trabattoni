@@ -11,3 +11,12 @@ app.controller("courseContainerCtrl", function($scope, $http) {
       // log error
     });
 });
+
+$(document).ready(function(){
+   $("h1").mouseenter(function(){
+       alert("ciao");
+       console.log("ciao");
+
+      //$("#toUnderline").css("text-decoration","underline");
+   });
+});

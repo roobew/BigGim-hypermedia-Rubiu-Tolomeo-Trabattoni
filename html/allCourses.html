@@ -18,7 +18,6 @@
         <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../css/half-slider.css" rel="stylesheet">
-    <link href="../css/myCSS.css" rel="stylesheet">
     <link href="../css/allCourses.css" rel="stylesheet">
 
 
@@ -160,7 +159,7 @@
                 <div class="panel panel-default" id="singleCourseContainer" ng-repeat="c in allCourseList">
                     <a href="../html/course.html?id={{c.id}}" >
                         <div class="panel-heading">
-                            <h3> {{c.nome}} </h3>
+                            <h3 id="toUnderline"> {{c.nome}} </h3>
                         </div>
 
                         <div class="panel-body">
