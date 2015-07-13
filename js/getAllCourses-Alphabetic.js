@@ -13,8 +13,8 @@ app.controller("courseContainerCtrl", function($scope, $http) {
 });
 
 $(document).ready(function(){
-   $("h1").mouseenter(function(){
-       alert("ciao");
+   $("#singleCourseContainer").mouseenter(function(){
+       //alert("ciao");
        console.log("ciao");
 
       //$("#toUnderline").css("text-decoration","underline");
