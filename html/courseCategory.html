@@ -62,7 +62,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses
                             <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li> <a href="">By level </a> </li>
+                            <li> <a href="../html/allCourses-byLevel.html">By level </a> </li>
                             <li> <a href="../html/allCourses-Alphabetic.html">All </a> </li>
                             <li> <a>Overall schedule</a></li>
                         </ul>
@@ -107,20 +107,20 @@
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://secret-weight-loss-formula.com/wp-content/uploads/2013/11/ILFORD-GYM-WEB-HOMEPAGE8.jpg');"></div>
+                <div class="fill" style="background-image:url('http://hypermediabiggym.altervista.org/Carousel/A.jpg');"></div>
                 <div class="carousel-caption">
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://www.leisurecentre.com/Content/images/Large%20Gallery/Spiceball-Gym-a.jpg');"></div>
+                <div class="fill" style="background-image:url('http://hypermediabiggym.altervista.org/Carousel/B.jpg');"></div>
                 <div class="carousel-caption">
 
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://www.virginactive.co.uk/~/media/Images/Clubs/belfast/Image%20Carousel/Gym-Floor-at-Virgin-Active-Health-Club-Belfast.ashx');"></div>
+                <div class="fill" style="background-image:url('http://hypermediabiggym.altervista.org/Carousel/C.jpg');"></div>
                 <div class="carousel-caption">
 
                 </div>
@@ -192,7 +192,9 @@
 
                 <div class="panel-body" ng-controller="listCourseCtrl">
                     <ul class="list-group" >
-                        <li class="list-group-item" ng-repeat="c in courses"> {{c.nome}}</li>
+                        <li class="list-group-item" ng-repeat="c in courses">
+                            <a href="../html/course.html?id={{c.id}}">{{c.nome}}</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -208,7 +210,9 @@
 
                 <div class="panel-body" ng-controller="listInstructorCtrl">
                     <ul class="list-group" >
-                        <li class="list-group-item" ng-repeat="i in instr">{{i.name}}</li>
+                        <li class="list-group-item" ng-repeat="i in instr">
+                            <a href="../html/instructor.html?idIns={{i.id}}">{{i.surname}}, {{i.name}} </a>
+                        </li>
                     </ul>
                 </div>
 

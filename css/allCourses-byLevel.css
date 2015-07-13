@@ -1,0 +1,104 @@
+@media screen and (min-width: 768px){
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 3.5em;
+    }
+
+    #levelBasic, #levelMedium,
+    #levelAdvanced
+    {
+        display: block;
+        float: left;
+        width: 30%;
+        height: auto;
+        min-height:20em;
+/*        border-right: 0.2em solid blue;*/
+        margin: 0.5em;
+    }
+
+/*
+    #levelBasic{
+        border-left: 0.2em solid blue;
+    }
+*/
+    #levelName{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        background-color:lightgray;
+    }
+
+    .imageContainer{
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    .infoCourse{
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+    .courseDescription{
+        padding: 0.5em;
+    }
+
+    .emptyDiv{
+        clear:both;
+    }
+
+    #coursePanel{
+        margin: 1em;
+    }
+
+    #myImage{
+        border-radius: 7em;
+        border: 0.2em solid black;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    h1{
+        color: red;
+        text-align: center;
+        font-size: 3em;
+    }
+
+     #levelName{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        background-color:lightgray;
+    }
+
+    #myImage{
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 20em;
+        border-radius: 7em;
+        border: 0.2em solid black;
+    }
+
+   #coursePanel{
+        margin:1.5em;
+   }
+
+}
+
+@media screen and (max-width:400px){
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+

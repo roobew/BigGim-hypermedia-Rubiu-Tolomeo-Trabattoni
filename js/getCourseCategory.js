@@ -1,18 +1,3 @@
-//// ----**** GET CATEGORY LIST  ****--- \\
-//var app = angular.module("myApp", []);
-//
-//app.controller("otherCategoryCtrl", function($scope, $http) {
-//  $http.get("http://hypermediabiggym.altervista.org/CourseCategory/getOtherCourseCategory.php").
-//    success(function(data, status, headers, config) {
-//      $scope.categories = data;
-//    }).
-//    error(function(data, status, headers, config) {
-//      // log error
-//    });
-//});
-
-
-
 // ----**** GET COURSE LIST  ****--- \\
 
 var get = parseGetVars();
