@@ -5,7 +5,7 @@ function eraseText() {
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("newsletter").setAttribute("checked","checked");
+    document.getElementById("newsletter").checked=true;
 }
 
 function retrieveData() {
