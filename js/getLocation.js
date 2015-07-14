@@ -4,8 +4,8 @@ function eraseText() {
     document.getElementById("area").value = "";
     document.getElementById("firstName").value = "";
     document.getElementById("lastName").value = "";
-    $('input[name=sex]').attr('checked',false);
-    $("input[id=male]").attr('checked',true);
+    document.getElementById("email").value = "";
+    document.getElementById("newsletter").setAttribute("checked","checked");
 }
 
 function retrieveData() {
