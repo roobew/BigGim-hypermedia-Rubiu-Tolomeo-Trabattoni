@@ -1,5 +1,4 @@
 var app = angular.module("Courses", []);
-
 app.controller("CoursesCtrl", function($scope, $http) {
   $http.get("http://hypermediabiggym.altervista.org/Course/getCourses.php").
     success(function(data, status, headers, config) {
@@ -8,7 +7,25 @@ app.controller("CoursesCtrl", function($scope, $http) {
     error(function(data, status, headers, config) {
       // log error
     });
+
 });
+
+var sk = angular.module("Schedule", []);
+sk.controller("ScheduleCtrl", function($scope, $http) {
+    var idCourse =  getUrlParameters("idCourse", "", true);
+  $http.get("http://hypermediabiggym.altervista.org/Course/getSchedule.php?idCourse="+idCourse).
+    success(function(data, status, headers, config) {
+      $scope.schedule = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+     $scope.remove = function(index) {
+                        $scope.items.splice(index, 1);
+                    }
+});
+
+angular.bootstrap(document.getElementById("id2"),['Courses']);
 
 function getUrlParameters(parameter, staticURL, decode){
    /*

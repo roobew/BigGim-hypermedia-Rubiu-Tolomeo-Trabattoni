@@ -79,7 +79,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../html/categories.html">Course Categories</a>
+                        <a href="../html/allCategory.html">Course Categories</a>
                     </li>
                     <li>
                         <a>Rooms</a>
@@ -148,42 +148,25 @@
     </header>
     <!-- Page Content -->
 <div class="pageContent">
+    <button class="btn btn-primary but" type="button" id="backButton" onclick="history.go(-1);return true;"> BACK </button>
     <div class="title">
         <div class="courseName"></div>
     </div>
-
-
     <div class="course">
+
         <div class="description">
             <div class="panel panel-default">
-                <div class="panel-heading"></div>
+                <div class="panel-heading">Description</div>
                 <div class="panel-body">
                     <div class="descr"></div>
                 </div>
             </div>
         </div>
-
-        <div class="images">
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div class="img1"></div>
-                </div>
-            </div>
-        </div>
-
-            <div class="images">
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div class="img2"></div>
-                </div>
-            </div>
-        </div>
-
+        <img class="images" id="img1" />
+        <img class="images" id="img2" />
         <div class="description">
             <div class="panel panel-default">
-                <div class="panel-heading"></div>
+                <div class="panel-heading">Other Infos</div>
                 <div class="panel-body">
                     Target: <target></target>
                 <br>
@@ -193,39 +176,32 @@
         </div>
         	<div class="description">
             <div class="panel panel-default">
-                <div class="panel-heading"></div>
+                <div class="panel-heading">Specials Features</div>
                 <div class="panel-body">
-                    Specials Features: <spec></spec>
+                    <spec></spec>
                 </div>
             </div>
         </div>
 
-           <div class="images">
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div class="img3"></div>
+            <img class="images" id="img3" />
+
+          <center><H4>SCHEDULE:</H4></center>
+        <div id="id1"ng-app="Schedule" ng-controller="ScheduleCtrl">
+            <div class="schedule" ng-repeat="sk in schedule">
+                <div class="panel panel-default">
+                    <div class="panel-heading"></div>
+                    <div class="panel-body">
+                        {{sk.day}}
+                         {{sk.startTime}} - {{sk.endTime}}
+                        <br>
+                        Room: (link not required)
+                        <br>
+                        Instructor:<a href="/html/instructor.html?idIns={{sk.idInstructor}}"> {{sk.surname}} {{sk.name}}</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-            SCHEDULE:
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div class="img3"></div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading"></div>
-                <div class="panel-body">
-                    <div class="img3"></div>
-                </div>
-            </div>
-
-
     </div>
-
    <!-- <nav class="navigation" ng-app="Courses" ng-controller="CoursesCtrl" id="categories">
         <ul class="menu" ng-repeat="cat in coursesCat">
             {{cat.category}}
@@ -235,22 +211,19 @@
         </ul>
     </nav>
 -->
-
     <!---------------------------------------------------------------------------------------------------------------->
-
     <nav class="navigationMenu navbar navbar-default navbar-fixed-left ">
         <div class="navigation">
             <div class="navbar-header">
-
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#categories">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
               </button>
-               <a class="navbar-brand">All Courses</a>
+               <a class="navbar-brand large">All Courses</a>
             </div>
-            <div class="collapse navbar-collapse" id="categories">
-               <div ng-app="Courses" ng-controller="CoursesCtrl">
+            <div class="collapse navbar-collapse large" id="categories">
+               <div id="id2"ng-app="Courses" ng-controller="CoursesCtrl">
                     <ul class="menu" ng-repeat="cat in coursesCat">
                         {{cat.category}}
                         <li class="sub-menu" ng-repeat="c in cat.courses">
@@ -261,8 +234,6 @@
             </div>
         </div>
     </nav>
-
-
     <!---------------------------------------------------------------------------------------------------------------->
 
  </div>
