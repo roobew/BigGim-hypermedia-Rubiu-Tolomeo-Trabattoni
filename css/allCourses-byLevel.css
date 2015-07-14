@@ -1,8 +1,9 @@
 @media screen and (min-width: 768px){
-    h1{
-        color: red;
+     h1{
+        :color: red;
         text-align: center;
-        font-size: 3.5em;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
 
     #levelBasic, #levelMedium,
@@ -67,9 +68,10 @@
 @media screen and (max-width:768px){
 
     h1{
-        color: red;
+        :color: red;
         text-align: center;
-        font-size: 3em;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
 
      #levelName{
@@ -95,9 +97,11 @@
 }
 
 @media screen and (max-width:400px){
-    h1{
-        font-size: 2em;
-        font-weight: bold;
+     h1{
+        :color: red;
+        text-align: center;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
 }
 

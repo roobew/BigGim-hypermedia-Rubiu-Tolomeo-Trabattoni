@@ -6,10 +6,11 @@
         height: auto;
         margin: 1em;
     }
-    h1{
-        color: red;
+     h1{
+        :color: red;
         text-align: center;
-        font-size: 4em;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
 
     #myButtonDiv{
@@ -62,25 +63,17 @@
         margin-top: 3em;
     }
 
-/*
-    .toTherRight{
-        display: block;
-        float: left;
-        width: 45;
-        height: auto;
-    }
-*/
-
     .emptyDiv{
         clear: both;
     }
 }
 
 @media screen and (max-width:1000px){
-    h1{
-        color: red;
+     h1{
+        :color: red;
         text-align: center;
-        font-size: 3em;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
 
     #backButton, .bio{
@@ -105,11 +98,11 @@
 }
 
 @media screen and (max-width:680px){
-    h1{
-        color: red;
+     h1{
+        :color: red;
         text-align: center;
-        font-size: 2em;
-        font-weight: bold;
+        font-weight:bold;
+        :font-size: 3.5em;
     }
     .imageContainer, .instructorBio{
         display: block;

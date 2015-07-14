@@ -7,11 +7,10 @@
    : background-color: blue;
 }
 
-h1{
-    color: red;
-    text-align: center;
-    font-size: 3em;
-}
+ h1{
+        text-align: center;
+        font-weight:bold;
+    }
 
 .generalDescription{
     font-size: 15px;
@@ -107,12 +106,12 @@ div.category a {
     :background-color: blue;
 }
 
-h1{
-    color: red;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-}
+ h1{
+        :color: red;
+        text-align: center;
+        font-weight:bold;
+        :font-size: 3.5em;
+    }
 
 
 .generalDescription{

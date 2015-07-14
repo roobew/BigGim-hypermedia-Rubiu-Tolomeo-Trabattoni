@@ -14,6 +14,11 @@
 .but{
 float:inherit;
 }
+
+#backButton{
+    margin: 1em;
+}
+
 .title{
     :background-color: wheat;
     font-weight: bolder;
@@ -142,6 +147,10 @@ div.course {
 }
 .but{
 float:left;
+}
+
+#backButton{
+    margin: 1em;
 }
 .title{
    :background-color: wheat;
