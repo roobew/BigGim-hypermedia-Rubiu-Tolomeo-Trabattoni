@@ -187,24 +187,24 @@
                               <div class="modal-body">
                                   <form>
                                         First name:<br>
-                                        <input type="text" name="firstname">
+                                        <input id="firstName" type="text" name="firstname">
                                         <br>
                                         Last name:<br>
-                                        <input type="text" name="lastname">
+                                        <input id="lastName" type="text" name="lastname">
                                         <br><br>
-                                        <input type="radio" name="sex" value="male" checked>Male
+                                        <input id="male" type="radio" name="sex" value="male" checked>Male
                                         <br>
-                                        <input type="radio" name="sex" value="female">Female
+                                        <input id="female" type="radio" name="sex" value="female">Female
                                         <br><br>
                                         Write your questions in the box below <br>
-                                        <textarea name="testo" rows="5" cols="50" placeholder="questions here..">
+                                        <textarea id="area" name="testo" rows="5" cols="50" placeholder="questions here..">
                                         </textarea>
                                   </form>
 
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-default" id="closeButton" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal">Confirm</button>
+                                  <button type="button" class="btn btn-default" id="confirmButton" data-dismiss="modal" onclick="javascript:eraseText();">Confirm</button>
                               </div>
                             </div>
 

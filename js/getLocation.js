@@ -1,5 +1,13 @@
 $(document).ready(retrieveData);
 
+function eraseText() {
+    document.getElementById("area").value = "";
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    $('input[name=sex]').attr('checked',false);
+    $("input[id=male]").attr('checked',true);
+}
+
 function retrieveData() {
     console.log("I'm ready!");
 
