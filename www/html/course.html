@@ -105,7 +105,7 @@
         <!-- /.container -->
     </nav>
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <header id="myCarousel" class="carousel slide hideMobile">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <img class="images" id="img1" />
-        <img class="images" id="img2" />
+        <img class="images hideMobile" id="img2" />
         <div class="description">
             <div class="panel panel-default">
                 <div class="panel-heading">Other Infos</div>
@@ -189,7 +189,7 @@
             <img class="images" id="img3" />
 
           <center><H4>SCHEDULE:</H4></center>
-        <div id="id1"ng-app="Schedule" ng-controller="ScheduleCtrl">
+        <div id="id1" ng-app="Schedule" ng-controller="ScheduleCtrl">
             <div class="schedule" ng-repeat="sk in schedule">
                 <div class="panel panel-default">
                     <div class="panel-heading"></div>
