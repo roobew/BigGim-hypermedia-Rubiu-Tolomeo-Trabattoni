@@ -137,7 +137,9 @@ div.course {
 
 @media screen and (max-width: 768px) {
     /*******  COURSE PAGE   *******/
-
+.hideMobile{
+    display: none;
+}
 .pageContent{
     margin-left: 1%;
     margin-right: 1%;
