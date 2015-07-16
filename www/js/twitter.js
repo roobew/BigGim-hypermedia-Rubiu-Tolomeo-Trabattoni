@@ -42,12 +42,20 @@ function ready() {
             console.log("inside");
             console.log(JSON.parse(response));
             var tweet = JSON.parse(response);
-            for(i=0; i<tweet.length; ++i)
-            {
-                $(".twitterApi").append('<p>' + tweet[i].text + '</p>');
+
+            if(tweet!=null){
+                console.log("prova:" + tweet[0].user.screen_name);
+                $("#username").html(tweet[0].user.screen_name);
+                $("#imageTwitter").attr("src", tweet[0].user.profile_image_url);
+
+                for(i=0; i<tweet.length; ++i)
+                {
+                    $(".tweetContainer").append('<p id="twitterText">' + tweet[i].text + '</p>' + '<p id="twitterData">'+ tweet[i].created_at.substring(0,20) +'</p>' +'<br>');
+                }
             }
-            //$(".twitterapi").
-            //$(".emptyDiv").html(tweet[0].id);
+            else{
+                $(".twitterApi").css("display", "none");
+            }
         },
         error: function(request,error)
         {

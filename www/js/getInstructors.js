@@ -60,9 +60,7 @@ function ready() {
                 $(".qual").html(instructor[0].qualifications);
                 $(".awards").html(instructor[0].awards);
                 $("#imageProfile").attr("src" , instructor[0].img);
-                //$(".twitterApi").html('<a class="twitter-timeline" href="' + instructor[0].twitterurl + '" data-widget-id="' + instructor[0].twitterid + '"></a>');
 
-                twttr.widgets.load();
         },
         error: function(request,error)
         {

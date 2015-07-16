@@ -6,7 +6,8 @@
         height: auto;
         margin: 1em;
     }
-     h1{
+
+    h1{
         :color: red;
         text-align: center;
         font-weight:bold;
@@ -21,6 +22,7 @@
         border:0.2em solid red;
         border-radius: 1.5em;
     }
+
     .imageContainer{
         display: block;
         float: left;
@@ -55,16 +57,65 @@
     #categoryTitle{
         text-align: center;
     }
+
     .twitterApi{
         display: block;
         float: left;
-        width: 45;
+        width: 100%;
         height: auto;
-        margin-top: 3em;
+        margin-top: 2em;
     }
 
     .emptyDiv{
         clear: both;
+    }
+
+    #tweetTitle{
+        text-align: center;
+        background-color: #0084B4;
+        color: white;
+    }
+
+    .twitterInfo{
+        display: block;
+        float: left;
+        width: 35%;
+        height: auto;
+        border-right: 3px solid #0084B4;
+    }
+
+    .tweetContainer{
+        display: block;
+        float: left;
+        width: 60%;
+        height: auto;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    #username{
+        text-align: center;
+        color: blue;
+    }
+
+    #twitterText{
+        padding-top: 1.5em;
+        font-style: italic;
+        text-align: center;
+    }
+
+     #twitterData{
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    #imageTwitter{
+        width: 90px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -91,10 +142,65 @@
         padding-left: 0.5em
     }
 
-     #twitterBox{
-         width: auto;
-
+    .twitterApi{
+        display: block;
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
     }
+    .twitterInfo{
+        display: block;
+        float: left;
+        width: 35%;
+        height: auto;
+        border-right: 3px solid #0084B4;
+    }
+
+    .tweetContainer{
+        display: block;
+        float: left;
+        width: 60%;
+        height: auto;
+    }
+
+     #tweetTitle{
+        text-align: center;
+        background-color: #0084B4;
+        color: white;
+    }
+
+    #twitterText{
+        font-style: italic;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    #username{
+        text-align: center;
+        color: blue;
+    }
+
+    #imageTwitter{
+        width: 90px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #twitterText{
+        padding-top: 1.5em;
+        font-style: italic;
+        text-align: center;
+    }
+
+     #twitterData{
+        font-size: 0.8em;
+        text-align: right;
+    }
+
 }
 
 @media screen and (max-width:680px){
@@ -116,5 +222,11 @@
     #imageProfile{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (max-width:380px){
+    .twitterInfo{
+        border: none;
     }
 }
