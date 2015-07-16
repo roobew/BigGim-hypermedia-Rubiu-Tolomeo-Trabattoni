@@ -1,4 +1,21 @@
+var app = angular.module("Instructor", []);
+
+
+
+app.controller("InstructorCtrl", function($scope, $http) {
+  $http.get("http://hypermediabiggym.altervista.org/Instructor/getInstructors.php").
+    success(function(data, status, headers, config) {
+      $scope.instructors = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
+
+
 $(document).ready(ready);
+
+
 
 function getUrlParameters(parameter, staticURL, decode){
    /*
@@ -32,7 +49,7 @@ function ready() {
     var idIns =  getUrlParameters("idIns", "", true);
 
     $.ajax({
-        method:"GET",
+        method:"POST",
         crossDomain: true,
         url: "http://hypermediabiggym.altervista.org/Instructor/twitter.php",
     data: { 'dato' : idIns}, //BISOGNA PASSARE IL NOME SU TWITTER DELL'ISTRUTTORE (esempio: byggymjalen)
