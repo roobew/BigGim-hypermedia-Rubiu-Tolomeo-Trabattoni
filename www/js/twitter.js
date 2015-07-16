@@ -1,18 +1,3 @@
-var app = angular.module("Instructor", []);
-
-
-
-app.controller("InstructorCtrl", function($scope, $http) {
-  $http.get("http://hypermediabiggym.altervista.org/Instructor/getInstructors.php").
-    success(function(data, status, headers, config) {
-      $scope.instructors = data;
-    }).
-    error(function(data, status, headers, config) {
-      // log error
-    });
-});
-
-
 $(document).ready(ready);
 
 
