@@ -154,7 +154,7 @@
                 <h1>ALL COURSES</h1>
             </div>
 
-            <div class="container" id="generalContainer" ng-controller="courseContainerCtrl">
+            <div class="container hideMobile" id="generalContainer" ng-controller="courseContainerCtrl">
                 <div class="panel panel-default" id="singleCourseContainer" ng-repeat="c in allCourseList">
                     <a href="course.html?idCourse={{c.id}}">
                         <div class="panel-heading">
@@ -177,6 +177,15 @@
                     </a>
                 </div>
 
+            </div>
+
+            <div class="container hideDesktop" id="generalContainer" ng-controller="courseContainerCtrl">
+                <div class="panel panel-default" id="singleCourseContainer" ng-repeat="c in allCourseList">
+                    <a href="course.html?idCourse={{c.id}}">
+                        <h3 id="toUnderline"> {{c.nome}} </h3>
+                         <h4>Level: {{c.level}}</h4>
+                    </a>
+                </div>
             </div>
 
             <div class="emptyDiv"> </div>
