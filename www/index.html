@@ -16,6 +16,7 @@
         <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/half-slider.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +27,7 @@
 
 </head>
 
-<body>
+<body onload="window.scrollTo(0,180)">
 
     <!-- Navbar definition -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -142,15 +143,84 @@
     <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>BIG GYM FITNESS CENTER</h1>
+        <div>
+            <h1>BIG GYM FITNESS CENTER</h1>
+        </div>
 
-                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>half-slider.css</code>file.</p>
-               <div class="prova"/>
+        <div class="myContent">
+            <div class="firstColumn">
+                <div class="f1Row listenRow">
+                    <p>"The reason I exercise is for the quality of life I enjoy." </p>
+                </div>
+
+                <div class="f2Row listenRow">
+                    <p>"Take care of your body. It's the only place you have to live."</p>
+
+                </div>
+
+                <div class="f3Row listenRow">
+                    <p>"Physical fitness is the basis of dynamic and creative intellectual activity."
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="secondColumn">
+                <div class="f4Row">
+                    <p>"The world wasn't formed in a day, and neither were we. Set small goals and build upon them."
+                    </p>
+
+                </div>
+
+                <div class="f5Row">
+                    <div class="preTimer">
+                        <p id="preTimerText"> <b>Physical fitness </b> is a general state of <i><i>health </i> and <i>well-being </i> and, more specifically, <i>the ability to perform aspects of sports or occupations </i>. Physical fitness is generally achieved through <u>correct nutrition </u>, <u>moderate-vigorous physical activity </u>, <u>exercise </u> and <u>rest</u>.
+                        </p>
+                    </div>
+
+                    <div class="postTimer">
+                        <div class="imageDiv">
+                            <img class="img-responsive" id="authorImage" src="" />
+                        </div>
+
+                        <div class="nameAuthor">
+                            <h3 id="name"> </h3>
+                            <h4 id="job"> </h4>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="f6Row">
+                    <p>"I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion."
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="thirdColumn">
+                <div class="f7Row">
+                    <p>"I don't think limits."</p>
+                </div>
+
+                <div class="f8Row">
+                    <p>"Training for me is a metaphor for life. The dedication, the determination, the desire, the work ethic, the great successes and the great failures"</p>
+                </div>
+
+                <div class="f9Row">
+                    <p>"Time and health are two precious assets that we don't recognize and appreciate until they have been depleted."
+                    </p>
+                </div>
             </div>
         </div>
 
+        <div class="lowScreen">
+            <p><b>Physical fitness </b> is a general state of <i>health </i> and <i>well-being </i> and, more specifically, <i>the ability to perform aspects of sports or occupations </i>. Physical fitness is generally achieved through <u>correct nutrition </u>, <u>moderate-vigorous physical activity </u>, <u>exercise </u> and <u>rest</u>.
+                <br><br> <h3> BIG GYM CARES ABOUT YOU</h3>
+            </p>
+        </div>
 
     </div>
     <!-- /.container -->
@@ -160,7 +230,8 @@
 
     <!-- myJS -->
     <script src="js/myJS.js"></script>
-    <script src="js/script.js"></script>-->
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap/bootstrap.min.js"></script>
